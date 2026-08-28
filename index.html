@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>THE CHAMP BOXING GYM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="분당 서현동 더챔프 복싱장 — 요금·운영시간·시설·오시는 길까지, 궁금한 것은 전화 없이 여기서 확인하세요. 문의는 카카오톡으로.">
+<meta name="theme-color" content="#171214">
+<meta name="format-detection" content="telephone=no">
+<!-- 카카오톡·문자로 링크 공유 시 미리보기 카드 정보 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="더챔프 복싱장 | THE CHAMP BOXING GYM">
+<meta property="og:description" content="분당 서현 NEW OPEN — 요금·운영시간 확인하고 카카오톡으로 무료체험 신청하세요.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://ballsy69.github.io/the-champ-boxing/images/gym-01.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23171214'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' fill='%23e23a2b'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300;400;500;700&display=swap">
+
+<!-- ============================================================
+     THE CHAMP BOXING GYM — 원페이지 웹사이트
+     ------------------------------------------------------------
+     ★ 사장님이 직접 수정해야 하는 곳은 전부  [수정]  주석으로
+       표시되어 있습니다. Ctrl+F 로 "[수정]" 을 검색하세요.
+       1. 카카오톡 채널 주소  (pf.kakao.com/...)
+       2. 요금표 금액
+       3. 수업 시간표 / 운영시간
+       4. 관장님 소개 문구
+       5. images/ 폴더에 사진, videos/ 폴더에 영상 넣기
+          (파일 이름은 images/README.md 참고)
+     ============================================================ -->
+
+<style>
+  /* ---------- 디자인 토큰 ---------- */
+  :root{
+    --ink:        #171214;   /* 페이지 바닥 — 체육관 고무바닥의 웜 차콜 */
+    --ink-2:      #201a1c;   /* 패널 */
+    --ink-3:      #2a2224;
+    --line:       #372c2e;   /* 헤어라인 */
+    --wrap:       #f4eee2;   /* 핸드랩 화이트 (어두운 배경 위 본문) */
+    --wrap-dim:   #b5a9a3;   /* 보조 텍스트 */
+    --canvas:     #efe6d4;   /* 링 캔버스 크림 (밝은 섹션 바닥) */
+    --canvas-2:   #e5d9c1;
+    --ink-on-canvas: #221813;
+    --dim-on-canvas: #6d5f52;
+    --line-on-canvas: #d3c5aa;
+    --red:        #e23a2b;   /* 글러브 레드 */
+    --red-deep:   #a6251b;
+    --gold:       #c9a15c;   /* 챔피언 벨트 골드 */
+    --kakao:      #fee500;   /* 카카오 공식 컬러 — 문의 버튼 전용 */
+    --kakao-ink:  #191919;
+
+    --disp: 'Black Han Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    --poster: 'Anton', 'Arial Narrow', sans-serif;
+    --body: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+
+    --max: 1080px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; scroll-padding-top:76px; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *, *::before, *::after{ animation:none !important; transition:none !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--wrap);
+    font-family:var(--body);
+    font-weight:400;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3{ margin:0; line-height:1.2; text-wrap:balance; }
+  p{ margin:0; }
+  a{ color:inherit; }
+  img{ max-width:100%; }
+  :focus-visible{ outline:3px solid var(--gold); outline-offset:3px; }
+
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 20px; }
+
+  /* 공통 섹션 리듬 */
+  .sec{ padding:88px 0; }
+  @media (max-width:640px){ .sec{ padding:64px 0; } }
+
+  /* 섹션 아이브로우: 포스터의 작은 잉크 라벨 */
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:var(--poster);
+    font-size:13px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--red);
+  }
+  .eyebrow::before{ content:""; width:26px; height:3px; background:var(--red); }
+
+  .sec-title{
+    font-family:var(--disp);
+    font-weight:400;
+    font-size:clamp(30px, 5vw, 44px);
+    margin:14px 0 12px;
+    letter-spacing:-.01em;
+  }
+  .sec-lead{ color:var(--wrap-dim); max-width:34em; }
+
+  /* 링 로프 구분선 — 3줄 로프 모티프 */
+  .ropes{ border:0; margin:0; height:22px; position:relative; }
+  .ropes::before{
+    content:""; position:absolute; inset:0;
+    background:
+      linear-gradient(var(--line), var(--line)) 0 2px / 100% 2px no-repeat,
+      linear-gradient(var(--line), var(--line)) 0 10px / 100% 2px no-repeat,
+      linear-gradient(var(--line), var(--line)) 0 18px / 100% 2px no-repeat;
+  }
+
+  /* ---------- 상단 내비게이션 ---------- */
+  .nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(23,18,20,.92);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-in{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; align-items:center; gap:20px; height:64px;
+  }
+  .logo{
+    font-family:var(--poster); font-size:20px; letter-spacing:.06em;
+    text-decoration:none; color:var(--wrap); white-space:nowrap;
+  }
+  .logo b{ color:var(--red); font-weight:400; }
+  .nav-links{ display:flex; gap:4px; margin-left:auto; }
+  .nav-links a{
+    text-decoration:none; font-size:14px; font-weight:500;
+    color:var(--wrap-dim); padding:8px 10px;
+  }
+  .nav-links a:hover{ color:var(--wrap); }
+  .nav-cta{
+    background:var(--kakao); color:var(--kakao-ink);
+    font-weight:700; font-size:14px; text-decoration:none;
+    padding:9px 16px; white-space:nowrap;
+  }
+  .nav-cta:hover{ filter:brightness(1.05); }
+  .nav-burger{
+    display:none; margin-left:auto;
+    background:none; border:1px solid var(--line); color:var(--wrap);
+    font-size:22px; line-height:1; padding:8px 12px; cursor:pointer;
+  }
+  @media (max-width:820px){
+    .nav-links{
+      display:none;
+      position:absolute; top:64px; left:0; right:0;
+      background:var(--ink); border-bottom:1px solid var(--line);
+      flex-direction:column; padding:10px 20px 18px;
+    }
+    .nav-links.open{ display:flex; }
+    .nav-links a{ padding:12px 4px; border-bottom:1px solid var(--line); font-size:16px; }
+    .nav-burger{ display:block; }
+    .nav-cta{ margin-left:auto; }
+    .nav-burger{ margin-left:0; }
+  }
+
+  /* ---------- 히어로: 파이트 포스터 ---------- */
+  .hero{
+    position:relative;
+    min-height:88vh;
+    display:flex; align-items:flex-end;
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  /* [수정] 대표 사진: images/hero.jpg 를 넣으면 자동으로 배경에 깔립니다 */
+  .hero-photo{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; opacity:.45; z-index:0;
+  }
+  .hero-tone{
+    position:absolute; inset:0; z-index:1;
+    background:
+      radial-gradient(ellipse 90% 70% at 70% 10%, rgba(226,58,43,.16), transparent 60%),
+      radial-gradient(circle at 20% 90%, rgba(201,161,92,.10), transparent 45%),
+      linear-gradient(180deg, rgba(23,18,20,.35) 0%, rgba(23,18,20,.88) 78%, var(--ink) 100%);
+  }
+  .hero-dots{
+    position:absolute; inset:0; z-index:1; opacity:.5;
+    background-image:radial-gradient(rgba(244,238,226,.07) 1px, transparent 1.5px);
+    background-size:22px 22px;
+  }
+  .hero-in{
+    position:relative; z-index:2;
+    width:100%; max-width:var(--max); margin:0 auto;
+    padding:140px 20px 72px;
+  }
+  .hero-eyebrow{
+    font-family:var(--poster);
+    letter-spacing:.3em; font-size:clamp(12px,1.6vw,15px);
+    color:var(--gold); text-transform:uppercase;
+    margin-bottom:18px;
+  }
+  .hero-line{
+    display:block;
+    font-family:var(--disp); font-weight:400;
+    font-size:clamp(46px, 10vw, 108px);
+    line-height:1.04; letter-spacing:-.015em;
+    opacity:0; transform:translateY(26px);
+    animation:punch .55s cubic-bezier(.2,.8,.25,1) forwards;
+  }
+  .hero-line:nth-child(2){ animation-delay:.12s; }
+  .hero-line:nth-child(3){ animation-delay:.24s; color:var(--red); }
+  @keyframes punch{ to{ opacity:1; transform:none; } }
+  .hero-sub{
+    margin-top:26px; max-width:30em;
+    color:var(--wrap-dim); font-size:clamp(15px,2vw,18px);
+  }
+  .hero-sub b{ color:var(--wrap); font-weight:700; }
+  .hero-actions{ margin-top:34px; display:flex; flex-wrap:wrap; gap:12px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    text-decoration:none; font-weight:700; font-size:15px;
+    padding:15px 26px; border:1px solid transparent;
+  }
+  .btn-kakao{ background:var(--kakao); color:var(--kakao-ink); }
+  .btn-kakao:hover{ filter:brightness(1.05); }
+  .btn-ghost{ border-color:var(--wrap-dim); color:var(--wrap); }
+  .btn-ghost:hover{ border-color:var(--wrap); }
+
+  /* ---------- 퀵 안내: 전화 대신 셀프 확인 ---------- */
+  .quick{ background:var(--ink-2); border-bottom:1px solid var(--line); }
+  .quick-in{ max-width:var(--max); margin:0 auto; padding:34px 20px 40px; }
+  .quick-label{
+    font-size:14px; color:var(--wrap-dim); margin-bottom:16px;
+  }
+  .quick-label strong{ color:var(--gold); font-weight:700; }
+  .quick-grid{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:10px;
+  }
+  @media (max-width:820px){ .quick-grid{ grid-template-columns:repeat(2,1fr); } }
+  .quick-grid a{
+    display:block; text-decoration:none;
+    border:1px solid var(--line); background:var(--ink);
+    padding:18px 18px 16px;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .quick-grid a:hover{ transform:translateY(-3px); border-color:var(--red); }
+  .quick-grid .q-num{
+    font-family:var(--poster); font-size:13px; letter-spacing:.15em;
+    color:var(--red); display:block; margin-bottom:6px;
+  }
+  .quick-grid .q-t{ display:block; font-weight:700; font-size:16px; color:var(--wrap); }
+  .quick-grid .q-d{ display:block; font-size:13px; color:var(--wrap-dim); margin-top:3px; }
+
+  /* ---------- 스탯 스트립 ---------- */
+  .stats{
+    display:grid; grid-template-columns:repeat(3,1fr);
+    border:1px solid var(--line);
+  }
+  @media (max-width:640px){ .stats{ grid-template-columns:1fr; } }
+  .stat{
+    padding:28px 24px; border-right:1px solid var(--line);
+    display:flex; flex-direction:column; gap:2px;
+  }
+  .stat:last-child{ border-right:0; }
+  @media (max-width:640px){
+    .stat{ border-right:0; border-bottom:1px solid var(--line); }
+    .stat:last-child{ border-bottom:0; }
+  }
+  .stat-num{
+    font-family:var(--poster); font-size:clamp(34px,5vw,46px);
+    color:var(--gold); letter-spacing:.02em;
+    font-variant-numeric:tabular-nums;
+  }
+  .stat-num small{ font-size:.45em; color:var(--wrap-dim); letter-spacing:.1em; }
+  .stat-cap{ font-size:14px; color:var(--wrap-dim); }
+
+  /* ---------- 소개 ---------- */
+  .about-grid{
+    display:grid; grid-template-columns:1.2fr .8fr; gap:44px;
+    align-items:start; margin-top:36px;
+  }
+  @media (max-width:820px){ .about-grid{ grid-template-columns:1fr; } }
+  .about-copy p{ margin-bottom:18px; color:var(--wrap-dim); }
+  .about-copy p b{ color:var(--wrap); }
+  .coach-card{
+    border:1px solid var(--line); background:var(--ink-2);
+  }
+  .coach-photo{
+    position:relative; aspect-ratio:4/3; overflow:hidden;
+    background:
+      repeating-linear-gradient(-45deg, rgba(244,238,226,.04) 0 2px, transparent 2px 14px),
+      radial-gradient(ellipse at 50% 30%, #33282b, var(--ink-2) 75%);
+  }
+  .coach-photo img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  }
+  .ph-mark{
+    position:absolute; inset:0; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:6px;
+    color:var(--wrap-dim); font-size:13px;
+  }
+  .ph-mark::before{
+    content:""; width:44px; height:44px;
+    border:2px solid var(--line); border-radius:50%;
+    background:
+      radial-gradient(circle at 50% 42%, var(--red) 0 9px, transparent 10px);
+  }
+  .coach-body{ padding:22px; }
+  .coach-body h3{ font-family:var(--disp); font-weight:400; font-size:22px; }
+  .coach-role{ color:var(--gold); font-size:13px; letter-spacing:.08em; margin:4px 0 12px; }
+  .coach-body p{ color:var(--wrap-dim); font-size:14px; }
+
+  /* ---------- 프로그램 ---------- */
+  .prog-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:40px;
+  }
+  @media (max-width:720px){ .prog-grid{ grid-template-columns:1fr; } }
+  .prog{
+    border:1px solid var(--line); background:var(--ink-2);
+    padding:28px 26px;
+    transition:transform .15s ease, border-color .15s ease;
+  }
+  .prog:hover{ transform:translateY(-4px); border-color:var(--gold); }
+  .prog-tag{
+    font-family:var(--poster); font-size:12px; letter-spacing:.2em;
+    text-transform:uppercase; color:var(--red);
+  }
+  .prog h3{ font-family:var(--disp); font-weight:400; font-size:24px; margin:8px 0 10px; }
+  .prog p{ color:var(--wrap-dim); font-size:15px; }
+  .prog-for{
+    margin-top:16px; padding-top:14px; border-top:1px solid var(--line);
+    font-size:13px; color:var(--gold);
+  }
+
+  /* ---------- 처음 오시는 날 (밝은 캔버스 섹션) ---------- */
+  .canvas-sec{
+    background:
+      repeating-linear-gradient(0deg, rgba(34,24,19,.025) 0 1px, transparent 1px 7px),
+      var(--canvas);
+    color:var(--ink-on-canvas);
+    border-top:3px solid var(--red);
+    border-bottom:3px solid var(--red);
+  }
+  .canvas-sec .eyebrow{ color:var(--red-deep); }
+  .canvas-sec .eyebrow::before{ background:var(--red-deep); }
+  .canvas-sec .sec-lead{ color:var(--dim-on-canvas); }
+  .steps{
+    counter-reset:step;
+    display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:44px;
+  }
+  @media (max-width:900px){ .steps{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .steps{ grid-template-columns:1fr; } }
+  .step{
+    background:rgba(255,255,255,.55);
+    border:1px solid var(--line-on-canvas);
+    padding:24px 22px;
+  }
+  .step-num{
+    font-family:var(--poster); font-size:34px; color:var(--red);
+    display:block; line-height:1;
+  }
+  .step h3{ font-size:17px; font-weight:700; margin:12px 0 8px; }
+  .step p{ font-size:14px; color:var(--dim-on-canvas); }
+  .canvas-note{
+    margin-top:28px; font-size:14px; color:var(--dim-on-canvas);
+  }
+  .canvas-note b{ color:var(--red-deep); }
+
+  /* ---------- 시설 & 영상 ---------- */
+  .gallery{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:40px;
+  }
+  @media (max-width:820px){ .gallery{ grid-template-columns:repeat(2,1fr); } }
+  .g-item{ display:flex; flex-direction:column; gap:8px; }
+  .g-frame{
+    position:relative; aspect-ratio:4/3; overflow:hidden;
+    border:1px solid var(--line);
+    background:
+      repeating-linear-gradient(-45deg, rgba(244,238,226,.045) 0 2px, transparent 2px 16px),
+      radial-gradient(ellipse at 50% 20%, #342a2c, var(--ink-2) 80%);
+  }
+  .g-item.wide{ grid-column:span 2; }
+  .g-item.wide .g-frame{ aspect-ratio:8/3.05; }
+  @media (max-width:820px){
+    .g-item.wide{ grid-column:span 2; }
+    .g-item.wide .g-frame{ aspect-ratio:2/1; }
+  }
+  .g-frame img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;
+  }
+  .g-cap{
+    display:flex; justify-content:space-between; gap:10px;
+    font-size:13px; color:var(--wrap-dim);
+  }
+  .g-cap .n{ font-family:var(--poster); letter-spacing:.12em; color:var(--gold); }
+
+  .video-grid{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin-top:14px;
+  }
+  @media (max-width:720px){ .video-grid{ grid-template-columns:1fr; } }
+  .v-frame{
+    position:relative; aspect-ratio:16/9; overflow:hidden;
+    border:1px solid var(--line);
+    background:
+      radial-gradient(ellipse at 50% 40%, #33282b, var(--ink-2) 80%);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .v-frame video, .v-frame iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0; object-fit:cover;
+  }
+  .v-ph{
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+    color:var(--wrap-dim); font-size:14px;
+  }
+  .v-ph::before{
+    content:""; width:0; height:0;
+    border-left:22px solid var(--red);
+    border-top:14px solid transparent;
+    border-bottom:14px solid transparent;
+  }
+
+  /* ---------- 무료체험 ---------- */
+  .trial-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:12px;
+    margin-top:40px; max-width:720px;
+  }
+  .trial-photo{
+    position:relative; aspect-ratio:1/1; overflow:hidden;
+    border:1px solid var(--line);
+    background:radial-gradient(ellipse at 50% 30%, #33282b, var(--ink-2) 80%);
+  }
+  .trial-photo img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  }
+  .trial-cta{ margin-top:26px; }
+
+  /* ---------- 요금 ---------- */
+  .price-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:44px;
+  }
+  @media (max-width:820px){ .price-grid{ grid-template-columns:1fr; } }
+  .price{
+    position:relative;
+    background:rgba(255,255,255,.6);
+    border:1px solid var(--line-on-canvas);
+    padding:30px 26px 26px;
+    display:flex; flex-direction:column; gap:0;
+  }
+  .price.hot{ border:2px solid var(--red); }
+  .hot-tag{
+    position:absolute; top:-13px; left:24px;
+    background:var(--red); color:#fff;
+    font-size:12px; font-weight:700; letter-spacing:.1em;
+    padding:3px 12px;
+  }
+  .price h3{ font-size:16px; font-weight:700; letter-spacing:.02em; }
+  .price-amt{
+    font-family:var(--poster); font-size:clamp(34px,4.4vw,42px);
+    color:var(--ink-on-canvas); margin:12px 0 2px;
+    font-variant-numeric:tabular-nums; letter-spacing:.01em;
+  }
+  .price-amt small{ font-size:.42em; color:var(--dim-on-canvas); letter-spacing:.06em; }
+  .price-amt.txt{ font-family:var(--disp); font-size:clamp(24px,3vw,30px); line-height:1.35; padding:5px 0 3px; }
+  .price-per{ font-size:13px; color:var(--red-deep); font-weight:500; }
+  .price ul{
+    list-style:none; margin:18px 0 0; padding:16px 0 0;
+    border-top:1px solid var(--line-on-canvas);
+    font-size:14px; color:var(--dim-on-canvas);
+    display:flex; flex-direction:column; gap:8px;
+  }
+  .price li::before{ content:"— "; color:var(--red); }
+
+  /* ---------- 시간표 ---------- */
+  .tbl-scroll{ overflow-x:auto; margin-top:40px; border:1px solid var(--line); }
+  table{
+    border-collapse:collapse; width:100%; min-width:640px;
+    font-size:14px; background:var(--ink-2);
+  }
+  th,td{
+    border:1px solid var(--line); padding:13px 14px; text-align:center;
+    font-variant-numeric:tabular-nums;
+  }
+  th{
+    font-family:var(--poster); font-weight:400; letter-spacing:.12em;
+    font-size:13px; color:var(--gold); background:var(--ink);
+  }
+  td{ color:var(--wrap-dim); }
+  td.on{ color:var(--wrap); font-weight:500; }
+  td .free{ color:var(--gold); font-size:12px; display:block; }
+  .hours{
+    display:flex; flex-wrap:wrap; gap:24px; margin-top:22px;
+    font-size:14px; color:var(--wrap-dim);
+  }
+  .hours b{ color:var(--wrap); }
+  .hours .closed{ color:var(--red); font-weight:700; }
+
+  /* ---------- FAQ ---------- */
+  .faq-list{ margin-top:40px; display:flex; flex-direction:column; gap:10px; }
+  details{
+    border:1px solid var(--line); background:var(--ink-2);
+  }
+  summary{
+    cursor:pointer; list-style:none;
+    display:flex; align-items:baseline; gap:14px;
+    padding:18px 20px; font-weight:700; font-size:16px;
+  }
+  summary::-webkit-details-marker{ display:none; }
+  summary .q{
+    font-family:var(--poster); color:var(--red); font-size:15px; letter-spacing:.08em;
+    flex-shrink:0;
+  }
+  summary::after{
+    content:"+"; margin-left:auto; color:var(--gold);
+    font-family:var(--poster); font-size:20px; line-height:1;
+  }
+  details[open] summary::after{ content:"–"; }
+  details[open] summary{ border-bottom:1px solid var(--line); }
+  .a{
+    padding:16px 20px 20px 49px; color:var(--wrap-dim); font-size:15px;
+  }
+  .a b{ color:var(--wrap); }
+  @media (max-width:520px){ .a{ padding-left:20px; } }
+
+  /* ---------- 오시는 길 ---------- */
+  .loc-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:40px;
+  }
+  @media (max-width:820px){ .loc-grid{ grid-template-columns:1fr; } }
+  .loc-card{
+    border:1px solid var(--line); background:var(--ink-2); padding:28px 26px;
+  }
+  .loc-card h3{
+    font-size:14px; font-weight:700; letter-spacing:.14em;
+    color:var(--gold); text-transform:uppercase; margin-bottom:14px;
+    font-family:var(--poster);
+  }
+  .loc-card p{ color:var(--wrap-dim); font-size:15px; margin-bottom:10px; }
+  .loc-card p b{ color:var(--wrap); }
+  .loc-addr{
+    font-size:clamp(19px,2.6vw,24px); font-family:var(--disp); font-weight:400;
+    color:var(--wrap); line-height:1.45; margin-bottom:14px;
+  }
+  .map-btns{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+  .map-btns a{
+    text-decoration:none; font-size:14px; font-weight:700;
+    border:1px solid var(--wrap-dim); padding:11px 18px; color:var(--wrap);
+  }
+  .map-btns a:hover{ border-color:var(--gold); color:var(--gold); }
+
+  /* ---------- 카카오 문의 CTA ---------- */
+  .contact{
+    background:
+      radial-gradient(ellipse 80% 90% at 50% 0%, rgba(226,58,43,.14), transparent 60%),
+      var(--ink-2);
+    border-top:1px solid var(--line);
+    text-align:center;
+  }
+  .contact .sec-title{ font-size:clamp(30px,5.4vw,50px); }
+  .contact-lead{ color:var(--wrap-dim); max-width:32em; margin:0 auto; }
+  .contact-lead b{ color:var(--wrap); }
+  .contact-actions{
+    margin-top:34px; display:flex; justify-content:center; flex-wrap:wrap; gap:12px;
+  }
+  .btn-big{ font-size:17px; padding:18px 34px; }
+  .contact-hint{ margin-top:22px; font-size:13px; color:var(--wrap-dim); }
+  .contact-hint b{ color:var(--gold); }
+
+  /* ---------- 푸터 ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:34px 0 110px;
+    font-size:13px; color:var(--wrap-dim);
+  }
+  .foot-in{
+    max-width:var(--max); margin:0 auto; padding:0 20px;
+    display:flex; flex-wrap:wrap; gap:8px 28px; justify-content:space-between;
+  }
+  .foot-logo{ font-family:var(--poster); letter-spacing:.06em; color:var(--wrap); }
+  .foot-logo b{ color:var(--red); font-weight:400; }
+
+  /* ---------- 플로팅 카카오 버튼 ---------- */
+  .kakao-float{
+    position:fixed; right:18px; bottom:18px; z-index:60;
+    display:flex; align-items:center; gap:9px;
+    background:var(--kakao); color:var(--kakao-ink);
+    font-weight:700; font-size:15px; text-decoration:none;
+    padding:14px 20px; border-radius:999px;
+    box-shadow:0 8px 24px rgba(0,0,0,.45);
+  }
+  .kakao-float:hover{ filter:brightness(1.05); }
+  .kakao-bubble{
+    width:20px; height:18px; position:relative; flex-shrink:0;
+    background:var(--kakao-ink);
+    border-radius:52% 52% 46% 46%;
+  }
+  .kakao-bubble::after{
+    content:""; position:absolute; left:4px; bottom:-4px;
+    border:5px solid transparent; border-top-color:var(--kakao-ink);
+    border-left-color:var(--kakao-ink);
+  }
+
+  /* ---------- 스크롤 리빌 ---------- */
+  .rv{ opacity:0; transform:translateY(22px); transition:opacity .5s ease, transform .5s ease; }
+  .rv.in{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce){ .rv{ opacity:1; transform:none; } }
+
+  /* 구형 삼성 인터넷·카카오톡 인앱 브라우저 대비 (aspect-ratio 미지원 시 고정 높이) */
+  @supports not (aspect-ratio: 1 / 1){
+    .g-frame{ height:240px; }
+    .g-item.wide .g-frame{ height:300px; }
+    .coach-photo{ height:260px; }
+    .v-frame{ height:220px; }
+    .trial-photo{ height:240px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== 내비게이션 ===================== -->
+<nav class="nav" aria-label="주 메뉴">
+  <div class="nav-in">
+    <a class="logo" href="#top">THE <b>CHAMP</b></a>
+    <button class="nav-burger" aria-label="메뉴 열기" aria-expanded="false" onclick="toggleNav(this)">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#programs">프로그램</a>
+      <a href="#facility">시설·영상</a>
+      <a href="#pricing">요금</a>
+      <a href="#trial">무료체험</a>
+      <a href="#schedule">시간표</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a href="#location">오시는 길</a>
+    </div>
+    <a class="nav-cta" href="#contact">카톡 문의</a>
+  </div>
+</nav>
+
+<!-- ===================== 히어로 ===================== -->
+<header class="hero" id="top">
+  <!-- [수정] images/hero.jpg — 체육관 대표 사진(가로가 긴 사진 권장) -->
+  <img class="hero-photo" src="images/hero.jpg" alt="" fetchpriority="high" decoding="async" onerror="this.remove()">
+  <div class="hero-tone"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-in">
+    <p class="hero-eyebrow">New Open &middot; Bundang Seohyeon &middot; The Champ Boxing Gym</p>
+    <h1>
+      <span class="hero-line">치고,</span>
+      <span class="hero-line">흘리고,</span>
+      <span class="hero-line">달라진다.</span>
+    </h1>
+    <p class="hero-sub">
+      1회 60분, 최대 <b>800kcal</b>. 복싱은 숫자로 증명하는 운동입니다.<br>
+      요금·운영시간·시설까지, 궁금하신 내용은 <b>이 페이지에 모두 담아두었습니다.</b> 편하게 확인해 보세요.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-kakao" href="#contact">카카오톡으로 문의하기</a>
+      <a class="btn btn-ghost" href="#pricing">요금 먼저 보기</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== 퀵 안내 ===================== -->
+<section class="quick" aria-label="빠른 안내">
+  <div class="quick-in">
+    <p class="quick-label"><strong>자주 궁금해하시는 내용</strong>을 한곳에 모았습니다. 전화 없이도 아래에서 편하게 확인하실 수 있어요.</p>
+    <div class="quick-grid">
+      <a href="#pricing"><span class="q-num">01</span><span class="q-t">요금이 궁금해요</span><span class="q-d">회원권 · 1:1 레슨 요금표</span></a>
+      <a href="#schedule"><span class="q-num">02</span><span class="q-t">언제 가면 되나요</span><span class="q-d">수업 시간표 · 자유 이용</span></a>
+      <a href="#first"><span class="q-num">03</span><span class="q-t">처음인데 괜찮나요</span><span class="q-d">첫날 순서 · 준비물 안내</span></a>
+      <a href="#location"><span class="q-num">04</span><span class="q-t">어디에 있나요</span><span class="q-d">서현역 · 주차 안내</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 소개 ===================== -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <p class="eyebrow rv">About</p>
+    <h2 class="sec-title rv">운동시간을 채우는 곳이 아니라,<br>칼로리를 태우는 곳입니다</h2>
+
+    <div class="stats rv" style="margin-top:36px">
+      <div class="stat"><span class="stat-num">800<small> KCAL</small></span><span class="stat-cap">60분 기준 최대 소모 칼로리</span></div>
+      <div class="stat"><span class="stat-num">60<small> MIN</small></span><span class="stat-cap">준비운동부터 마무리까지 1회 운동</span></div>
+      <div class="stat"><span class="stat-num">1:1<small> 코칭</small></span><span class="stat-cap">매 회 코치가 직접 자세를 잡아드립니다</span></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy rv">
+        <p>
+          더챔프 복싱장은 분당 서현동에 있는 <b>정통 복싱 체육관</b>입니다.
+          러닝머신 위에서 흘려보내는 한 시간보다, 줄넘기 3라운드·미트 3라운드가
+          몸을 더 빨리 바꾼다고 믿습니다.
+        </p>
+        <p>
+          처음 오신 분은 줄넘기와 기본 자세부터, 경력자는 미트·스파링까지 —
+          <b>수준에 맞는 커리큘럼</b>으로 매일의 훈련이 쌓이도록 설계했습니다.
+          운동을 "다니는 것"이 아니라 "늘어가는 것"으로 만들어 드립니다.
+        </p>
+        <p>
+          다이어트가 목적이어도, 체력이 목적이어도, 시합이 목적이어도 좋습니다.
+          글러브를 끼는 순간 모두가 같은 출발선입니다.
+        </p>
+      </div>
+      <!-- [수정] 관장님 사진: images/coach.jpg / 아래 이름·경력을 실제 내용으로 교체하세요 -->
+      <div class="coach-card rv">
+        <div class="coach-photo">
+          <span class="ph-mark" aria-hidden="true">코치진 사진 준비 중</span>
+          <!-- [수정] 사진 속 코치가 어느 분인지 확인 후, 아래 이름 표기를 맞춰 주세요. -->
+          <img src="images/coach.jpg" alt="더챔프 복싱장 코치 프로필" loading="lazy" decoding="async" onerror="this.remove()">
+        </div>
+        <div class="coach-body">
+          <h3>코치진 소개</h3>
+          <p class="coach-role">임채민 관장 · 이찬희 코치 외 2명</p>
+          <!-- [수정] 코치진 경력·소개 문구를 전달받는 대로 여기에 채워 주세요. -->
+          <p>
+            회원별 맞춤형 시스템으로, 처음 오시는 분도
+            1:1 기초 지도부터 차근차근 시작합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="ropes" aria-hidden="true">
+
+<!-- ===================== 프로그램 ===================== -->
+<section class="sec" id="programs">
+  <div class="wrap">
+    <p class="eyebrow rv">Programs</p>
+    <h2 class="sec-title rv">목적이 달라도, 시작은 잽부터</h2>
+    <p class="sec-lead rv">모든 프로그램은 회원권 하나로 자유롭게 참여할 수 있고, 1:1 레슨만 별도입니다.</p>
+
+    <div class="prog-grid">
+      <div class="prog rv">
+        <p class="prog-tag">Diet Boxing</p>
+        <h3>다이어트 복싱</h3>
+        <p>매일 테마가 바뀌는 복싱+서킷 그룹 수업 — 스텝박스·타바타·덤벨·케틀벨·월볼 서킷. 지루할 틈 없이 한 시간이 끝나 있습니다.</p>
+        <p class="prog-for">이런 분께 — 체중 감량, 헬스가 지루하신 분</p>
+      </div>
+      <div class="prog rv">
+        <p class="prog-tag">Authentic Boxing</p>
+        <h3>정통 복싱</h3>
+        <p>스텝·가드·콤비네이션까지 기본기를 단단하게. 원하는 회원은 아마추어 대회 출전까지 준비합니다.</p>
+        <p class="prog-for">이런 분께 — 기술을 제대로 배우고 싶은 분</p>
+      </div>
+      <div class="prog rv">
+        <p class="prog-tag">Personal 1:1</p>
+        <h3>1:1 퍼스널 레슨</h3>
+        <p>코치와 단둘이 진행하는 맞춤 수업. 자세 교정 속도가 다르고, 원하는 시간에 예약해 진행합니다.</p>
+        <p class="prog-for">이런 분께 — 빠른 실력 향상, 집중 관리가 필요한 분</p>
+      </div>
+      <div class="prog rv">
+        <p class="prog-tag">Junior</p>
+        <h3>주니어 복싱</h3>
+        <p>초·중·고 학생 대상. 체력과 자신감, 그리고 바른 운동 습관을 만드는 성장기 트레이닝입니다.</p>
+        <p class="prog-for">이런 분께 — 자녀의 체력·자신감이 고민인 부모님</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 처음 오시는 날 ===================== -->
+<section class="sec canvas-sec" id="first">
+  <div class="wrap">
+    <p class="eyebrow rv">First Day</p>
+    <h2 class="sec-title rv">처음 오시는 날, 이렇게 진행됩니다</h2>
+    <p class="sec-lead rv">복싱을 한 번도 안 해보셨어도 괜찮습니다. 회원 대부분이 그렇게 시작했습니다.</p>
+
+    <div class="steps">
+      <div class="step rv"><span class="step-num">01</span><h3>편한 복장으로 방문</h3><p>실내용 운동화와 물만 챙겨 오세요. 운동복은 체육관에서 제공되고, 글러브도 처음엔 체육관 것을 쓰시면 됩니다.</p></div>
+      <div class="step rv"><span class="step-num">02</span><h3>상담 & 목표 확인</h3><p>다이어트인지, 취미인지, 시합인지 — 목표와 운동 경험을 확인하고 커리큘럼을 정합니다.</p></div>
+      <div class="step rv"><span class="step-num">03</span><h3>기본기 첫 수업</h3><p>줄넘기, 스탠스, 잽부터 시작합니다. 코치가 처음부터 끝까지 옆에서 잡아드립니다.</p></div>
+      <div class="step rv"><span class="step-num">04</span><h3>운동 플랜 안내</h3><p>첫 수업 후 몸 상태에 맞는 주간 운동 플랜과 회원권을 안내해 드립니다.</p></div>
+    </div>
+
+    <p class="canvas-note rv"><b>무료 체험</b>을 원하시면 카카오톡으로 원하는 날짜·시간만 보내주세요. 별도 준비물은 없습니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 시설 & 영상 ===================== -->
+<section class="sec" id="facility">
+  <div class="wrap">
+    <p class="eyebrow rv">Gym Tour</p>
+    <h2 class="sec-title rv">글러브 끼기 전에, 먼저 둘러보세요</h2>
+    <p class="sec-lead rv">사진과 영상으로 체육관 분위기와 실제 수업 모습을 미리 확인하실 수 있습니다.</p>
+
+    <div class="gallery">
+      <div class="g-item wide rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-01.jpg" alt="더챔프 회원들과 코치진 단체 사진" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>더챔프 회원들과 코치진</span><span class="n">01</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-02.jpg" alt="샌드백 트레이닝 수업 모습" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>샌드백 트레이닝</span><span class="n">02</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-03.jpg" alt="그룹 수업 모습" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>그룹 수업</span><span class="n">03</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-04.jpg" alt="서킷 트레이닝 수업 모습" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>서킷 트레이닝</span><span class="n">04</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-05.jpg" alt="다이어트 콘테스트 단체 사진" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>다이어트 콘테스트</span><span class="n">05</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-06.jpg" alt="제공되는 운동복과 수건 선반" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>운동복 · 수건 제공</span><span class="n">06</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-07.jpg" alt="탈의실과 개인 사물함" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>탈의실 · 사물함</span><span class="n">07</span></p>
+      </div>
+      <div class="g-item rv">
+        <div class="g-frame"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/gym-08.jpg" alt="샤워실" loading="lazy" decoding="async" onerror="this.remove()"></div>
+        <p class="g-cap"><span>샤워실</span><span class="n">08</span></p>
+      </div>
+    </div>
+
+    <!-- [수정] 영상 넣는 법 (둘 중 하나):
+         1) videos/tour.mp4 처럼 파일을 올린 뒤 아래 v-frame 안을
+            <video src="videos/tour.mp4" controls playsinline></video> 로 교체
+         2) 유튜브에 올렸다면
+            <iframe src="https://www.youtube.com/embed/영상ID" title="체육관 소개 영상" allowfullscreen></iframe> 로 교체 -->
+    <div class="video-grid">
+      <div class="v-frame rv"><div class="v-ph">체육관 소개 영상 준비 중</div></div>
+      <div class="v-frame rv"><div class="v-ph">수업 하이라이트 영상 준비 중</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 요금 ===================== -->
+<section class="sec canvas-sec" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow rv">Pricing</p>
+    <h2 class="sec-title rv">요금 안내</h2>
+    <p class="sec-lead rv">요금은 간단하게, 1개월·3개월 기준으로만 안내드립니다. 장기 이용권은 상담으로 맞춰드립니다.</p>
+
+    <!-- [수정] 1·3개월 금액은 예시입니다. 실제 요금으로 바꿔 주세요.
+         (장기권·1:1 레슨 금액은 사장님 요청대로 홈페이지에 노출하지 않습니다) -->
+    <div class="price-grid">
+      <div class="price rv">
+        <h3>1개월 회원권</h3>
+        <p class="price-amt">150,000<small> 원</small></p>
+        <p class="price-per">부담 없이 시작하기</p>
+        <ul>
+          <li>운영시간 내 자유 이용</li>
+          <li>정해진 요일·시간 없음</li>
+          <li>초보자 1:1 기초 지도</li>
+        </ul>
+      </div>
+      <div class="price hot rv">
+        <span class="hot-tag">가장 많이 등록</span>
+        <h3>3개월 회원권</h3>
+        <p class="price-amt">390,000<small> 원</small></p>
+        <p class="price-per">몸이 바뀌는 최소 기간</p>
+        <ul>
+          <li>1개월권과 동일한 이용 방식</li>
+          <li>월로 나누면 더 합리적인 요금</li>
+        </ul>
+      </div>
+      <div class="price rv">
+        <h3>장기 이용권 · 1:1 레슨</h3>
+        <p class="price-amt txt">상담 시 안내</p>
+        <p class="price-per">목표에 맞춰 설계해 드립니다</p>
+        <ul>
+          <li>6개월 이상 장기 회원권</li>
+          <li>코치와 1:1 퍼스널 레슨</li>
+          <li>카카오톡으로 편하게 상담</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="canvas-note rv">그 외 요금과 할인은 <b>카카오톡 상담 시</b> 안내드립니다.</p>
+  </div>
+</section>
+
+<!-- ===================== 무료체험 ===================== -->
+<section class="sec" id="trial">
+  <div class="wrap">
+    <p class="eyebrow rv">Free Trial</p>
+    <h2 class="sec-title rv">무료체험으로 먼저 경험해 보세요</h2>
+    <p class="sec-lead rv">등록 고민은 그다음에 하셔도 됩니다. 원하시는 날짜와 시간만 카카오톡으로 보내주시면 바로 예약해 드립니다.</p>
+
+    <div class="trial-grid">
+      <div class="trial-photo rv"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/promo-02.jpg" alt="더챔프 복싱 무료체험 안내 — 무료" loading="lazy" decoding="async" onerror="this.remove()"></div>
+      <div class="trial-photo rv"><span class="ph-mark" aria-hidden="true">사진 준비 중</span><img src="images/promo-01.jpg" alt="더챔프 복싱 무료체험 안내 — 체험" loading="lazy" decoding="async" onerror="this.remove()"></div>
+    </div>
+
+    <div class="trial-cta rv">
+      <a class="btn btn-kakao" href="#contact">카카오톡으로 무료체험 예약하기</a>
+    </div>
+  </div>
+</section>
+
+<hr class="ropes" aria-hidden="true">
+
+<!-- ===================== 시간표 ===================== -->
+<section class="sec" id="schedule">
+  <div class="wrap">
+    <p class="eyebrow rv">Timetable</p>
+    <h2 class="sec-title rv">수업 시간표</h2>
+    <p class="sec-lead rv">그룹 수업은 아래 시간표대로 진행되고, 그 외 시간에도 언제 오시든 1:1 지도와 자율운동이 가능합니다.</p>
+
+    <!-- 체육관에서 사용 중인 실제 시간표 포스터 기준입니다.
+         [수정] 전체 운영시간(오픈~마감, 일요일 휴관 여부)은 확인 후 아래 안내 줄에 반영해 주세요. -->
+    <div class="tbl-scroll rv">
+      <table>
+        <caption style="position:absolute;left:-9999px">주간 수업 시간표</caption>
+        <thead>
+          <tr><th scope="col">시간</th><th scope="col">월</th><th scope="col">화</th><th scope="col">수</th><th scope="col">목</th><th scope="col">금</th><th scope="col">토</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">10:30–11:20<br>11:30–12:20</th>
+            <td class="on">복싱<br>&amp; 스텝박스</td>
+            <td>—</td>
+            <td class="on">복싱<br>&amp; 덤벨</td>
+            <td>—</td>
+            <td class="on">복싱<br>&amp; 월볼 서킷</td>
+            <td class="on">복싱 &amp; 와드<span class="free">11:00–13:00</span></td>
+          </tr>
+          <tr>
+            <th scope="row">13:00–17:00</th>
+            <td colspan="6" class="on">1대1 개인지도 퍼스널 트레이닝 · 자율운동<span class="free">시간대 상관없이 언제 오셔도 수업 가능합니다</span></td>
+          </tr>
+          <tr>
+            <th scope="row">17:00–17:50<br>18:30–19:20<br>19:30–20:20<br>20:30–21:20</th>
+            <td class="on">복싱<br>&amp; 스텝박스</td>
+            <td class="on">복싱<br>&amp; 타바타</td>
+            <td class="on">복싱<br>&amp; 덤벨</td>
+            <td class="on">복싱<br>&amp; 케틀벨</td>
+            <td class="on">복싱<br>&amp; 월볼 서킷</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="hours rv">
+      <span><b>샤워실 · 운동복</b> 제공</span>
+      <span><b>주 3회권 회원도</b> 요일 지정 없이 원하는 날 오시면 됩니다</span>
+      <span><b>1:1 퍼스널 레슨</b>은 예약제 (시간 협의)</span>
+    </div>
+  </div>
+</section>
+
+<hr class="ropes" aria-hidden="true">
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <p class="eyebrow rv">FAQ</p>
+    <h2 class="sec-title rv">자주 묻는 질문</h2>
+    <p class="sec-lead rv">실제로 가장 많이 받는 질문들입니다. 여기에 없는 내용은 카카오톡으로 편하게 문의해 주세요.</p>
+
+    <!-- 아래 5개는 사장님이 알려주신 실제 최다 문의 기준입니다. -->
+    <div class="faq-list rv">
+      <details>
+        <summary><span class="q">Q1</span>이용 가격이 어떻게 되나요?</summary>
+        <p class="a">1개월·3개월 요금은 위 <b>요금 안내</b>에서 확인하실 수 있습니다. 6개월 이상 장기 이용권과 1:1 레슨은 <b>카카오톡 상담 시</b> 안내드립니다.</p>
+      </details>
+      <details>
+        <summary><span class="q">Q2</span>수업은 몇 시에 있나요?</summary>
+        <p class="a">위 <b>수업 시간표</b>를 참고해 원하시는 시간에 방문하시면 됩니다. 수업 시간이 아니어도 <b>언제 오시든 1:1 지도와 자율운동</b>이 가능합니다.</p>
+      </details>
+      <details>
+        <summary><span class="q">Q3</span>주 3회 회원은 정해진 요일과 시간에 와야 하나요?</summary>
+        <p class="a">아닙니다. 정해진 요일이나 고정된 수업 시간이 있는 방식이 아니라, 운영시간 내 <b>본인이 원하는 요일과 시간에 자유롭게</b> 이용하실 수 있습니다.</p>
+      </details>
+      <details>
+        <summary><span class="q">Q4</span>복싱을 처음 해보는데 괜찮나요?</summary>
+        <p class="a">네. 처음 오시는 분들도 코치가 <b>1대1로 기초부터 별도로 안내</b>하고 있어, 복싱 경험이 없어도 바로 시작하실 수 있습니다.</p>
+      </details>
+      <details>
+        <summary><span class="q">Q5</span>무료체험은 어떻게 신청하나요?</summary>
+        <p class="a"><b>카카오톡으로 원하는 날짜와 시간</b>만 보내주시면 예약이 확정됩니다. 별도 준비물 없이 편한 운동복으로 오시면 됩니다.</p>
+      </details>
+      <!-- [수정] 글러브 대여 여부만 확인해 주세요. 운동복·샤워실 제공은 시간표 포스터 기준입니다. -->
+      <details>
+        <summary><span class="q">Q6</span>준비물은 뭔가요?</summary>
+        <p class="a">실내용 운동화와 물이면 충분합니다. <b>운동복과 샤워실이 제공</b>되고, 글러브 등 기본 장비도 체육관에서 대여해 드립니다.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 오시는 길 ===================== -->
+<section class="sec" id="location">
+  <div class="wrap">
+    <p class="eyebrow rv">Location</p>
+    <h2 class="sec-title rv">오시는 길</h2>
+
+    <div class="loc-grid">
+      <div class="loc-card rv">
+        <h3>Address</h3>
+        <p class="loc-addr">경기 성남시 분당구<br>서현동 254-5</p>
+        <p><b>THE CHAMP BOXING GYM</b> — 더챔프 복싱장</p>
+        <div class="map-btns">
+          <a href="https://naver.me/GuCgOuPx" target="_blank" rel="noopener">네이버 지도로 보기</a>
+          <a href="https://map.kakao.com/link/search/더챔프복싱장 분당" target="_blank" rel="noopener">카카오맵에서 찾기</a>
+        </div>
+      </div>
+      <div class="loc-card rv">
+        <h3>How to get here</h3>
+        <!-- [수정] 도보 시간·주차 안내를 실제 정보로 확인해 주세요. -->
+        <p><b>지하철</b> — 수인분당선 서현역에서 도보 약 5분</p>
+        <p><b>버스</b> — 서현역·서현동 정류장 하차 후 도보 이동</p>
+        <p><b>주차</b> — 건물 주차 공간이 협소하니, 가급적 대중교통 이용을 권장합니다. 차량 방문 시 카카오톡으로 미리 문의해 주세요.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 카카오 문의 ===================== -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow rv" style="justify-content:center">Contact</p>
+    <h2 class="sec-title rv">문의는 카카오톡 하나면 됩니다</h2>
+    <p class="contact-lead rv">
+      카카오톡 채널로 편하게 남겨주세요.
+      <b>수업 중이 아닐 때 순서대로, 빠짐없이</b> 답변드리겠습니다.
+    </p>
+    <div class="contact-actions rv">
+      <!-- [수정] 카카오톡 채널 개설 후 아래 href 를 채널 주소로 바꿔 주세요.
+           예: https://pf.kakao.com/_abcDE  (카카오톡 채널 관리자센터 > 채널 URL) -->
+      <a class="btn btn-kakao btn-big" href="#contact" onclick="return kakaoNotYet(event)">카카오톡 채널 친구 추가</a>
+    </div>
+    <p class="contact-hint rv">
+      카카오톡에서 <b>"더챔프 복싱장"</b>을 검색해도 찾을 수 있습니다.<br>
+      무료체험 신청은 원하는 날짜·시간만 보내주시면 바로 확정해 드립니다.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-in">
+    <span class="foot-logo">THE <b>CHAMP</b> BOXING GYM</span>
+    <span>경기 성남시 분당구 서현동 254-5 · 문의는 카카오톡 채널</span>
+  </div>
+</footer>
+
+<!-- 플로팅 카카오 버튼 -->
+<a class="kakao-float" href="#contact" aria-label="카카오톡으로 문의하기">
+  <span class="kakao-bubble" aria-hidden="true"></span>카톡 문의
+</a>
+
+<script>
+  function toggleNav(btn){
+    var links = document.getElementById('navLinks');
+    var open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.querySelectorAll('#navLinks a').forEach(function(a){
+    a.addEventListener('click', function(){
+      document.getElementById('navLinks').classList.remove('open');
+      document.querySelector('.nav-burger').setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* [수정] 카카오 채널 주소를 넣은 뒤에는 이 함수와 onclick 을 지워도 됩니다. */
+  function kakaoNotYet(e){
+    e.preventDefault();
+    alert('카카오톡에서 "더챔프 복싱장" 채널을 검색해 주세요.\n(채널 링크는 곧 연결됩니다)');
+    return false;
+  }
+
+  /* 스크롤 리빌 */
+  (function(){
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  })();
+</script>
+</body>
+</html>
