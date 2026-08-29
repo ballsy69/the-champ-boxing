@@ -5,18 +5,18 @@
 <title>THE CHAMP BOXING GYM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="분당 서현동 더챔프 복싱장 — 요금·운영시간·시설·오시는 길까지, 궁금한 것은 전화 없이 여기서 확인하세요. 문의는 카카오톡으로.">
-<meta name="theme-color" content="#171214">
+<meta name="theme-color" content="#0f0d0a">
 <meta name="format-detection" content="telephone=no">
 <!-- 카카오톡·문자로 링크 공유 시 미리보기 카드 정보 -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="더챔프 복싱장 | THE CHAMP BOXING GYM">
 <meta property="og:description" content="분당 서현 NEW OPEN — 요금·운영시간 확인하고 카카오톡으로 무료체험 신청하세요.">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:image" content="https://ballsy69.github.io/the-champ-boxing/images/gym-01.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23171214'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' fill='%23e23a2b'%3EC%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://ballsy69.github.io/claude/champ-boxing-gym/images/gym-01.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f0d0a'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' font-family='Arial Black,sans-serif' font-weight='900' fill='%23f2c230'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@500;700;800&family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@300;400;500;700&display=swap">
 
 <!-- ============================================================
      THE CHAMP BOXING GYM — 원페이지 웹사이트
@@ -34,25 +34,27 @@
 <style>
   /* ---------- 디자인 토큰 ---------- */
   :root{
-    --ink:        #171214;   /* 페이지 바닥 — 체육관 고무바닥의 웜 차콜 */
-    --ink-2:      #201a1c;   /* 패널 */
-    --ink-3:      #2a2224;
-    --line:       #372c2e;   /* 헤어라인 */
-    --wrap:       #f4eee2;   /* 핸드랩 화이트 (어두운 배경 위 본문) */
-    --wrap-dim:   #b5a9a3;   /* 보조 텍스트 */
+    /* 더챔프 실제 브랜드 컬러 — 매장 간판·시간표 포스터의 블랙 + 챔피언 골드 */
+    --ink:        #0f0d0a;   /* 페이지 바닥 — 잉크 블랙 */
+    --ink-2:      #181510;   /* 패널 */
+    --ink-3:      #221d15;
+    --line:       #342c1b;   /* 헤어라인 */
+    --wrap:       #f4efe3;   /* 핸드랩 화이트 (어두운 배경 위 본문) */
+    --wrap-dim:   #ab9f87;   /* 보조 텍스트 */
     --canvas:     #efe6d4;   /* 링 캔버스 크림 (밝은 섹션 바닥) */
     --canvas-2:   #e5d9c1;
-    --ink-on-canvas: #221813;
-    --dim-on-canvas: #6d5f52;
-    --line-on-canvas: #d3c5aa;
-    --red:        #e23a2b;   /* 글러브 레드 */
-    --red-deep:   #a6251b;
-    --gold:       #c9a15c;   /* 챔피언 벨트 골드 */
+    --ink-on-canvas: #221b10;
+    --dim-on-canvas: #6d5f4a;
+    --line-on-canvas: #d3c5a5;
+    --red:        #d8402f;   /* 휴관 등 경고 표시 전용 */
+    --red-deep:   #96731a;   /* 캔버스 위 브론즈 강조 */
+    --gold:       #f2c230;   /* 챔피언 골드 — 포스터의 옐로 */
+    --gold-deep:  #b98e1d;
     --kakao:      #fee500;   /* 카카오 공식 컬러 — 문의 버튼 전용 */
     --kakao-ink:  #191919;
 
-    --disp: 'Black Han Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-    --poster: 'Anton', 'Arial Narrow', sans-serif;
+    --disp: 'Do Hyeon', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    --poster: 'Big Shoulders', 'Arial Narrow', sans-serif;
     --body: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 
     --max: 1080px;
@@ -91,11 +93,11 @@
   /* 섹션 아이브로우: 포스터의 작은 잉크 라벨 */
   .eyebrow{
     display:inline-flex; align-items:center; gap:10px;
-    font-family:var(--poster);
-    font-size:13px; letter-spacing:.22em; text-transform:uppercase;
-    color:var(--red);
+    font-family:var(--poster); font-weight:700;
+    font-size:14px; letter-spacing:.22em; text-transform:uppercase;
+    color:var(--gold);
   }
-  .eyebrow::before{ content:""; width:26px; height:3px; background:var(--red); }
+  .eyebrow::before{ content:""; width:26px; height:3px; background:var(--gold); }
 
   .sec-title{
     font-family:var(--disp);
@@ -129,10 +131,10 @@
     display:flex; align-items:center; gap:20px; height:64px;
   }
   .logo{
-    font-family:var(--poster); font-size:20px; letter-spacing:.06em;
+    font-family:var(--poster); font-weight:800; font-size:21px; letter-spacing:.06em;
     text-decoration:none; color:var(--wrap); white-space:nowrap;
   }
-  .logo b{ color:var(--red); font-weight:400; }
+  .logo b{ color:var(--gold); font-weight:800; }
   .nav-links{ display:flex; gap:4px; margin-left:auto; }
   .nav-links a{
     text-decoration:none; font-size:14px; font-weight:500;
@@ -180,10 +182,19 @@
   .hero-tone{
     position:absolute; inset:0; z-index:1;
     background:
-      radial-gradient(ellipse 90% 70% at 70% 10%, rgba(226,58,43,.16), transparent 60%),
-      radial-gradient(circle at 20% 90%, rgba(201,161,92,.10), transparent 45%),
-      linear-gradient(180deg, rgba(23,18,20,.35) 0%, rgba(23,18,20,.88) 78%, var(--ink) 100%);
+      radial-gradient(ellipse 90% 70% at 70% 10%, rgba(242,194,48,.13), transparent 60%),
+      radial-gradient(circle at 20% 90%, rgba(242,194,48,.06), transparent 45%),
+      linear-gradient(180deg, rgba(15,13,10,.4) 0%, rgba(15,13,10,.88) 78%, var(--ink) 100%);
   }
+  /* 히어로 뒤 대형 아웃라인 워터마크 */
+  .hero-mark{
+    position:absolute; z-index:1; top:8%; left:50%; transform:translateX(-50%);
+    font-family:var(--poster); font-weight:800; white-space:nowrap;
+    font-size:clamp(110px, 24vw, 290px); line-height:1; letter-spacing:.02em;
+    color:transparent; -webkit-text-stroke:2px rgba(242,194,48,.13);
+    pointer-events:none; user-select:none;
+  }
+  .crest{ display:block; width:120px; height:auto; color:var(--gold); margin-bottom:16px; }
   .hero-dots{
     position:absolute; inset:0; z-index:1; opacity:.5;
     background-image:radial-gradient(rgba(244,238,226,.07) 1px, transparent 1.5px);
@@ -195,8 +206,8 @@
     padding:140px 20px 72px;
   }
   .hero-eyebrow{
-    font-family:var(--poster);
-    letter-spacing:.3em; font-size:clamp(12px,1.6vw,15px);
+    font-family:var(--poster); font-weight:700;
+    letter-spacing:.3em; font-size:clamp(13px,1.7vw,16px);
     color:var(--gold); text-transform:uppercase;
     margin-bottom:18px;
   }
@@ -208,8 +219,7 @@
     opacity:0; transform:translateY(26px);
     animation:punch .55s cubic-bezier(.2,.8,.25,1) forwards;
   }
-  .hero-line:nth-child(2){ animation-delay:.12s; }
-  .hero-line:nth-child(3){ animation-delay:.24s; color:var(--red); }
+  .hero-line:nth-child(2){ animation-delay:.12s; color:var(--gold); }
   @keyframes punch{ to{ opacity:1; transform:none; } }
   .hero-sub{
     margin-top:26px; max-width:30em;
@@ -226,6 +236,24 @@
   .btn-kakao:hover{ filter:brightness(1.05); }
   .btn-ghost{ border-color:var(--wrap-dim); color:var(--wrap); }
   .btn-ghost:hover{ border-color:var(--wrap); }
+
+  /* ---------- 챔피언 벨트 티커 ---------- */
+  .belt{
+    overflow:hidden; background:var(--gold);
+    border-top:3px solid var(--gold-deep); border-bottom:3px solid var(--gold-deep);
+    padding:9px 0;
+  }
+  .belt-track{
+    display:flex; width:max-content;
+    animation:beltmove 26s linear infinite;
+  }
+  .belt-track span{
+    font-family:var(--poster); font-weight:800; font-size:15px;
+    letter-spacing:.18em; text-transform:uppercase;
+    color:#171204; white-space:nowrap; padding-right:12px;
+  }
+  @keyframes beltmove{ to{ transform:translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce){ .belt-track{ animation:none; } }
 
   /* ---------- 퀵 안내: 전화 대신 셀프 확인 ---------- */
   .quick{ background:var(--ink-2); border-bottom:1px solid var(--line); }
@@ -244,10 +272,10 @@
     padding:18px 18px 16px;
     transition:transform .15s ease, border-color .15s ease;
   }
-  .quick-grid a:hover{ transform:translateY(-3px); border-color:var(--red); }
+  .quick-grid a:hover{ transform:translateY(-3px); border-color:var(--gold); }
   .quick-grid .q-num{
-    font-family:var(--poster); font-size:13px; letter-spacing:.15em;
-    color:var(--red); display:block; margin-bottom:6px;
+    font-family:var(--poster); font-weight:700; font-size:14px; letter-spacing:.15em;
+    color:var(--gold); display:block; margin-bottom:6px;
   }
   .quick-grid .q-t{ display:block; font-weight:700; font-size:16px; color:var(--wrap); }
   .quick-grid .q-d{ display:block; font-size:13px; color:var(--wrap-dim); margin-top:3px; }
@@ -268,7 +296,7 @@
     .stat:last-child{ border-bottom:0; }
   }
   .stat-num{
-    font-family:var(--poster); font-size:clamp(34px,5vw,46px);
+    font-family:var(--poster); font-weight:800; font-size:clamp(36px,5vw,48px);
     color:var(--gold); letter-spacing:.02em;
     font-variant-numeric:tabular-nums;
   }
@@ -304,7 +332,7 @@
     content:""; width:44px; height:44px;
     border:2px solid var(--line); border-radius:50%;
     background:
-      radial-gradient(circle at 50% 42%, var(--red) 0 9px, transparent 10px);
+      radial-gradient(circle at 50% 42%, var(--gold) 0 9px, transparent 10px);
   }
   .coach-body{ padding:22px; }
   .coach-body h3{ font-family:var(--disp); font-weight:400; font-size:22px; }
@@ -323,9 +351,21 @@
   }
   .prog:hover{ transform:translateY(-4px); border-color:var(--gold); }
   .prog-tag{
-    font-family:var(--poster); font-size:12px; letter-spacing:.2em;
-    text-transform:uppercase; color:var(--red);
+    font-family:var(--poster); font-weight:700; font-size:13px; letter-spacing:.2em;
+    text-transform:uppercase; color:var(--gold);
   }
+  /* 다이어트 콘테스트 배너 */
+  .contest{
+    margin-top:16px; display:grid; grid-template-columns:220px 1fr;
+    border:1px solid var(--gold-deep); background:var(--ink-2);
+  }
+  @media (max-width:640px){ .contest{ grid-template-columns:1fr; } }
+  .contest-photo{ position:relative; min-height:150px; overflow:hidden; }
+  .contest-photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .contest-body{ padding:24px 26px; }
+  .contest-body h3{ font-family:var(--disp); font-weight:400; font-size:22px; }
+  .contest-body .prog-tag{ color:var(--gold); }
+  .contest-body p{ color:var(--wrap-dim); font-size:14px; margin-top:8px; }
   .prog h3{ font-family:var(--disp); font-weight:400; font-size:24px; margin:8px 0 10px; }
   .prog p{ color:var(--wrap-dim); font-size:15px; }
   .prog-for{
@@ -339,8 +379,8 @@
       repeating-linear-gradient(0deg, rgba(34,24,19,.025) 0 1px, transparent 1px 7px),
       var(--canvas);
     color:var(--ink-on-canvas);
-    border-top:3px solid var(--red);
-    border-bottom:3px solid var(--red);
+    border-top:3px solid var(--gold-deep);
+    border-bottom:3px solid var(--gold-deep);
   }
   .canvas-sec .eyebrow{ color:var(--red-deep); }
   .canvas-sec .eyebrow::before{ background:var(--red-deep); }
@@ -357,7 +397,7 @@
     padding:24px 22px;
   }
   .step-num{
-    font-family:var(--poster); font-size:34px; color:var(--red);
+    font-family:var(--poster); font-weight:800; font-size:36px; color:var(--red-deep);
     display:block; line-height:1;
   }
   .step h3{ font-size:17px; font-weight:700; margin:12px 0 8px; }
@@ -415,7 +455,7 @@
   }
   .v-ph::before{
     content:""; width:0; height:0;
-    border-left:22px solid var(--red);
+    border-left:22px solid var(--gold);
     border-top:14px solid transparent;
     border-bottom:14px solid transparent;
   }
@@ -447,16 +487,16 @@
     padding:30px 26px 26px;
     display:flex; flex-direction:column; gap:0;
   }
-  .price.hot{ border:2px solid var(--red); }
+  .price.hot{ border:2px solid var(--gold-deep); }
   .hot-tag{
     position:absolute; top:-13px; left:24px;
-    background:var(--red); color:#fff;
+    background:var(--gold); color:#171204;
     font-size:12px; font-weight:700; letter-spacing:.1em;
     padding:3px 12px;
   }
   .price h3{ font-size:16px; font-weight:700; letter-spacing:.02em; }
   .price-amt{
-    font-family:var(--poster); font-size:clamp(34px,4.4vw,42px);
+    font-family:var(--poster); font-weight:800; font-size:clamp(34px,4.4vw,42px);
     color:var(--ink-on-canvas); margin:12px 0 2px;
     font-variant-numeric:tabular-nums; letter-spacing:.01em;
   }
@@ -469,7 +509,7 @@
     font-size:14px; color:var(--dim-on-canvas);
     display:flex; flex-direction:column; gap:8px;
   }
-  .price li::before{ content:"— "; color:var(--red); }
+  .price li::before{ content:"— "; color:var(--red-deep); }
 
   /* ---------- 시간표 ---------- */
   .tbl-scroll{ overflow-x:auto; margin-top:40px; border:1px solid var(--line); }
@@ -482,8 +522,8 @@
     font-variant-numeric:tabular-nums;
   }
   th{
-    font-family:var(--poster); font-weight:400; letter-spacing:.12em;
-    font-size:13px; color:var(--gold); background:var(--ink);
+    font-family:var(--poster); font-weight:700; letter-spacing:.12em;
+    font-size:14px; color:var(--gold); background:var(--ink);
   }
   td{ color:var(--wrap-dim); }
   td.on{ color:var(--wrap); font-weight:500; }
@@ -507,7 +547,7 @@
   }
   summary::-webkit-details-marker{ display:none; }
   summary .q{
-    font-family:var(--poster); color:var(--red); font-size:15px; letter-spacing:.08em;
+    font-family:var(--poster); font-weight:700; color:var(--gold); font-size:16px; letter-spacing:.08em;
     flex-shrink:0;
   }
   summary::after{
@@ -551,7 +591,7 @@
   /* ---------- 카카오 문의 CTA ---------- */
   .contact{
     background:
-      radial-gradient(ellipse 80% 90% at 50% 0%, rgba(226,58,43,.14), transparent 60%),
+      radial-gradient(ellipse 80% 90% at 50% 0%, rgba(242,194,48,.12), transparent 60%),
       var(--ink-2);
     border-top:1px solid var(--line);
     text-align:center;
@@ -576,8 +616,8 @@
     max-width:var(--max); margin:0 auto; padding:0 20px;
     display:flex; flex-wrap:wrap; gap:8px 28px; justify-content:space-between;
   }
-  .foot-logo{ font-family:var(--poster); letter-spacing:.06em; color:var(--wrap); }
-  .foot-logo b{ color:var(--red); font-weight:400; }
+  .foot-logo{ font-family:var(--poster); font-weight:800; letter-spacing:.06em; color:var(--wrap); }
+  .foot-logo b{ color:var(--gold); font-weight:800; }
 
   /* ---------- 플로팅 카카오 버튼 ---------- */
   .kakao-float{
@@ -641,12 +681,23 @@
   <img class="hero-photo" src="images/hero.jpg" alt="" fetchpriority="high" decoding="async" onerror="this.remove()">
   <div class="hero-tone"></div>
   <div class="hero-dots"></div>
+  <div class="hero-mark" aria-hidden="true">THE CHAMP</div>
   <div class="hero-in">
-    <p class="hero-eyebrow">New Open &middot; Bundang Seohyeon &middot; The Champ Boxing Gym</p>
+    <svg class="crest" viewBox="0 0 132 32" aria-hidden="true">
+      <g fill="currentColor">
+        <rect x="0"  y="4"  width="50" height="4"/>
+        <rect x="8"  y="12" width="42" height="4"/>
+        <rect x="16" y="20" width="34" height="4"/>
+        <rect x="82" y="4"  width="50" height="4"/>
+        <rect x="82" y="12" width="42" height="4"/>
+        <rect x="82" y="20" width="34" height="4"/>
+        <polygon points="66,0 71,14 66,28 61,14"/>
+      </g>
+    </svg>
+    <p class="hero-eyebrow">Bundang Seohyeon &middot; Boxing Club &middot; New Open</p>
     <h1>
-      <span class="hero-line">치고,</span>
-      <span class="hero-line">흘리고,</span>
-      <span class="hero-line">달라진다.</span>
+      <span class="hero-line">모두 도전자로 시작해,</span>
+      <span class="hero-line">챔프가 되어 나갑니다.</span>
     </h1>
     <p class="hero-sub">
       1회 60분, 최대 <b>800kcal</b>. 복싱은 숫자로 증명하는 운동입니다.<br>
@@ -658,6 +709,14 @@
     </div>
   </div>
 </header>
+
+<!-- 챔피언 벨트 티커 -->
+<div class="belt" aria-hidden="true">
+  <div class="belt-track">
+    <span>The Champ Boxing Club ★ 분당 서현 New Open ★ 무료체험 진행 중 ★ 다이어트 콘테스트 ★ 운동복·샤워실 제공 ★&nbsp;</span>
+    <span>The Champ Boxing Club ★ 분당 서현 New Open ★ 무료체험 진행 중 ★ 다이어트 콘테스트 ★ 운동복·샤워실 제공 ★&nbsp;</span>
+  </div>
+</div>
 
 <!-- ===================== 퀵 안내 ===================== -->
 <section class="quick" aria-label="빠른 안내">
@@ -675,7 +734,7 @@
 <!-- ===================== 소개 ===================== -->
 <section class="sec" id="about">
   <div class="wrap">
-    <p class="eyebrow rv">About</p>
+    <p class="eyebrow rv">Round 1 &middot; About</p>
     <h2 class="sec-title rv">운동시간을 채우는 곳이 아니라,<br>칼로리를 태우는 곳입니다</h2>
 
     <div class="stats rv" style="margin-top:36px">
@@ -727,7 +786,7 @@
 <!-- ===================== 프로그램 ===================== -->
 <section class="sec" id="programs">
   <div class="wrap">
-    <p class="eyebrow rv">Programs</p>
+    <p class="eyebrow rv">Round 2 &middot; Programs</p>
     <h2 class="sec-title rv">목적이 달라도, 시작은 잽부터</h2>
     <p class="sec-lead rv">모든 프로그램은 회원권 하나로 자유롭게 참여할 수 있고, 1:1 레슨만 별도입니다.</p>
 
@@ -757,13 +816,23 @@
         <p class="prog-for">이런 분께 — 자녀의 체력·자신감이 고민인 부모님</p>
       </div>
     </div>
+
+    <!-- 더챔프만의 시그니처 이벤트 -->
+    <div class="contest rv">
+      <div class="contest-photo"><img src="images/gym-05.jpg" alt="더챔프 다이어트 콘테스트 단체 사진" loading="lazy" decoding="async" onerror="this.remove()"></div>
+      <div class="contest-body">
+        <p class="prog-tag">The Champ Signature</p>
+        <h3>다이어트 콘테스트</h3>
+        <p>회원들이 함께 감량에 도전하고, 결과를 다 같이 축하하는 더챔프만의 정기 이벤트. 혼자 하는 다이어트보다 오래 가는 이유입니다.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ===================== 처음 오시는 날 ===================== -->
 <section class="sec canvas-sec" id="first">
   <div class="wrap">
-    <p class="eyebrow rv">First Day</p>
+    <p class="eyebrow rv">Round 3 &middot; First Day</p>
     <h2 class="sec-title rv">처음 오시는 날, 이렇게 진행됩니다</h2>
     <p class="sec-lead rv">복싱을 한 번도 안 해보셨어도 괜찮습니다. 회원 대부분이 그렇게 시작했습니다.</p>
 
@@ -781,7 +850,7 @@
 <!-- ===================== 시설 & 영상 ===================== -->
 <section class="sec" id="facility">
   <div class="wrap">
-    <p class="eyebrow rv">Gym Tour</p>
+    <p class="eyebrow rv">Round 4 &middot; Gym Tour</p>
     <h2 class="sec-title rv">글러브 끼기 전에, 먼저 둘러보세요</h2>
     <p class="sec-lead rv">사진과 영상으로 체육관 분위기와 실제 수업 모습을 미리 확인하실 수 있습니다.</p>
 
@@ -835,7 +904,7 @@
 <!-- ===================== 요금 ===================== -->
 <section class="sec canvas-sec" id="pricing">
   <div class="wrap">
-    <p class="eyebrow rv">Pricing</p>
+    <p class="eyebrow rv">Round 5 &middot; Pricing</p>
     <h2 class="sec-title rv">요금 안내</h2>
     <p class="sec-lead rv">요금은 간단하게, 1개월·3개월 기준으로만 안내드립니다. 장기 이용권은 상담으로 맞춰드립니다.</p>
 
@@ -881,7 +950,7 @@
 <!-- ===================== 무료체험 ===================== -->
 <section class="sec" id="trial">
   <div class="wrap">
-    <p class="eyebrow rv">Free Trial</p>
+    <p class="eyebrow rv">Round 6 &middot; Free Trial</p>
     <h2 class="sec-title rv">무료체험으로 먼저 경험해 보세요</h2>
     <p class="sec-lead rv">등록 고민은 그다음에 하셔도 됩니다. 원하시는 날짜와 시간만 카카오톡으로 보내주시면 바로 예약해 드립니다.</p>
 
@@ -901,7 +970,7 @@
 <!-- ===================== 시간표 ===================== -->
 <section class="sec" id="schedule">
   <div class="wrap">
-    <p class="eyebrow rv">Timetable</p>
+    <p class="eyebrow rv">Round 7 &middot; Timetable</p>
     <h2 class="sec-title rv">수업 시간표</h2>
     <p class="sec-lead rv">그룹 수업은 아래 시간표대로 진행되고, 그 외 시간에도 언제 오시든 1:1 지도와 자율운동이 가능합니다.</p>
 
@@ -953,7 +1022,7 @@
 <!-- ===================== FAQ ===================== -->
 <section class="sec" id="faq">
   <div class="wrap">
-    <p class="eyebrow rv">FAQ</p>
+    <p class="eyebrow rv">Round 8 &middot; FAQ</p>
     <h2 class="sec-title rv">자주 묻는 질문</h2>
     <p class="sec-lead rv">실제로 가장 많이 받는 질문들입니다. 여기에 없는 내용은 카카오톡으로 편하게 문의해 주세요.</p>
 
@@ -991,7 +1060,7 @@
 <!-- ===================== 오시는 길 ===================== -->
 <section class="sec" id="location">
   <div class="wrap">
-    <p class="eyebrow rv">Location</p>
+    <p class="eyebrow rv">Round 9 &middot; Location</p>
     <h2 class="sec-title rv">오시는 길</h2>
 
     <div class="loc-grid">
@@ -1018,7 +1087,7 @@
 <!-- ===================== 카카오 문의 ===================== -->
 <section class="sec contact" id="contact">
   <div class="wrap">
-    <p class="eyebrow rv" style="justify-content:center">Contact</p>
+    <p class="eyebrow rv" style="justify-content:center">Final Round &middot; Contact</p>
     <h2 class="sec-title rv">문의는 카카오톡 하나면 됩니다</h2>
     <p class="contact-lead rv">
       카카오톡 채널로 편하게 남겨주세요.
@@ -1084,5 +1153,3 @@
 </script>
 </body>
 </html>
-
-<!-- deploy: pages build trigger -->
