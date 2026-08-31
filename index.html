@@ -264,9 +264,16 @@
   }
   .snap.small{ width:min(220px, 40vw); }
   .snap.card{ width:min(340px, 60vw); }
-  @media (max-width:520px){
-    .snaps{ gap:18px 12px; }
-    .snap:nth-child(even){ transform:rotate(1.8deg) translateY(6px); }
+  .snap.tall{ width:min(280px, 78vw); }
+  .snap video{ display:block; width:100%; border-radius:3px; background:#000; }
+  /* 모바일: 사진·영상이 화면을 가득 채우도록 */
+  @media (max-width:640px){
+    .snaps{ gap:22px 12px; }
+    .snap, .snap.card, .snap.small{ width:100%; }
+    .snap.tall{ width:min(320px, 84vw); }
+    .snap:nth-child(even){ transform:rotate(1.2deg); }
+    .video-main{ border-radius:0; border-left:0; border-right:0; margin-left:-20px; margin-right:-20px; }
+    .jtbc-photo{ min-height:230px; }
   }
 
   /* 후기 자리 */
@@ -575,7 +582,8 @@
       <div class="v-ph">실제 수업 영상 준비 중 — 곧 업로드됩니다</div>
     </div>
 
-    <div class="snaps rv" aria-label="수업 안내 카드">
+    <div class="snaps rv" aria-label="수업 안내 카드와 체육관 둘러보기">
+      <figure class="snap tall"><video controls playsinline preload="metadata" poster="images/entrance-poster.jpg" src="videos/entrance-reel.mp4"></video><figcaption>입구부터 한 바퀴 — 미리 둘러보세요 🎥</figcaption></figure>
       <figure class="snap"><img src="images/card-50min.jpg" alt="50분 운동 700칼로리 소모 — 수업 안내 카드" loading="lazy" decoding="async" onerror="this.parentElement.remove()"><figcaption>50분 운동, 700칼로리 소모!</figcaption></figure>
       <figure class="snap"><img src="images/card-poster01.jpg" alt="더챔프 오래 다니는 이유 — 운동은 의지가 아니라 환경입니다" loading="lazy" decoding="async" onerror="this.parentElement.remove()"><figcaption>01. 오래 다니는 이유</figcaption></figure>
       <figure class="snap"><img src="images/card-grouppt.jpg" alt="그룹 PT인데 개인 PT 같습니다 — 60분 내내 함께합니다" loading="lazy" decoding="async" onerror="this.parentElement.remove()"><figcaption>02. 그룹 PT인데 개인 PT 같아요</figcaption></figure>
@@ -829,10 +837,6 @@
         <p><b>지하철</b> — 수인분당선 서현역에서 도보 약 5분</p>
         <p><b>버스</b> — 서현역·서현동 정류장 하차 후 도보 이동</p>
         <p><b>주차</b> — 건물 주차 공간이 협소하니, 가급적 대중교통 이용을 권장합니다. 차량 방문 시 카카오톡으로 미리 문의해 주세요.</p>
-        <figure class="snap small" style="margin-top:14px">
-          <video controls playsinline preload="metadata" poster="images/entrance-poster.jpg" style="display:block;width:100%;border-radius:3px" src="videos/entrance-reel.mp4"></video>
-          <figcaption>입구는 이렇게 생겼어요 → 들어오시면 됩니다!</figcaption>
-        </figure>
       </div>
     </div>
   </div>
