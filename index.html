@@ -113,12 +113,17 @@
     display:flex; align-items:center; gap:20px; height:64px;
   }
   .logo{
-    display:flex; align-items:center; gap:9px;
+    display:flex; align-items:center; gap:9px; flex-shrink:0;
     font-family:var(--poster); font-weight:800; font-size:21px; letter-spacing:.06em;
     text-decoration:none; color:var(--ink); white-space:nowrap;
   }
   .logo b{ color:var(--blue); font-weight:800; }
-  .logo-img{ height:42px; width:auto; }
+  .logo-img{ height:42px; width:auto; flex-shrink:0; }
+  /* 좁은 화면에서는 로고 이미지 안에 이미 THE CHAMP GYM 글자가 있으므로 옆 글자는 숨깁니다 */
+  @media (max-width:460px){
+    .logo-text{ display:none; }
+    .logo-img{ height:38px; }
+  }
   .nav-links{ display:flex; gap:4px; margin-left:auto; }
   .nav-links a{ text-decoration:none; font-size:14px; font-weight:500; color:var(--dim); padding:8px 10px; }
   .nav-links a:hover{ color:var(--ink); }
@@ -348,6 +353,8 @@
     background:radial-gradient(ellipse at 50% 30%, #dbe7fb, var(--blue-soft) 75%);
   }
   .pfp-box{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+  /* 실제 사진이 있으면 기본 아바타 위에 덮어씁니다 (사진 없으면 아바타가 그대로 보임) */
+  .coach-photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
   .pfp{ width:44%; height:auto; color:#b9cdf3; }
   .coach-body{ padding:18px 20px; }
   .coach-body h3{ font-family:var(--disp); font-weight:400; font-size:21px; }
@@ -508,7 +515,7 @@
 <!-- ===================== 내비게이션 ===================== -->
 <nav class="nav" aria-label="주 메뉴">
   <div class="nav-in">
-    <a class="logo" href="#top"><img class="logo-img" src="images/logo.png" alt="" decoding="async" onerror="this.remove()">THE <b>CHAMP</b></a>
+    <a class="logo" href="#top"><img class="logo-img" src="images/logo.png" alt="THE CHAMP GYM" decoding="async" onerror="this.remove()"><span class="logo-text">THE <b>CHAMP</b></span></a>
     <button class="nav-burger" aria-label="메뉴 열기" aria-expanded="false" onclick="toggleNav(this)">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="#why">더챔프가 다른 이유</a>
@@ -735,8 +742,14 @@
     <!-- [수정] 코치진 프로필 사진은 워터마크 없는 최종 촬영본 도착 후 교체합니다. 경력·소개 문구 수신 대기. -->
     <div class="coach-rail" aria-label="코치진 프로필 — 옆으로 넘겨보세요">
       <article class="coach-card">
-        <div class="coach-photo"><div class="pfp-box" aria-hidden="true"><svg class="pfp" viewBox="0 0 100 100"><circle cx="50" cy="36" r="17" fill="currentColor"/><path d="M16 94c4-24 19-32 34-32s30 8 34 32z" fill="currentColor"/></svg></div></div>
-        <div class="coach-body"><h3>임채민 관장</h3><p class="coach-role">대표 관장</p><p>사진·소개 준비 중입니다.</p></div>
+        <!-- [수정] 이 사진은 체육관에서 주신 JTBC 방송 소개 카드에서 잘라낸 것입니다
+             (방송 자막에 "임채민 / 관장"으로 표기되어 있어 본인 확인됨).
+             정식 프로필 촬영본이 오면 같은 파일명으로 교체해 주세요. -->
+        <div class="coach-photo">
+          <div class="pfp-box" aria-hidden="true"><svg class="pfp" viewBox="0 0 100 100"><circle cx="50" cy="36" r="17" fill="currentColor"/><path d="M16 94c4-24 19-32 34-32s30 8 34 32z" fill="currentColor"/></svg></div>
+          <img src="images/coach-lim.jpg" alt="임채민 관장" loading="lazy" decoding="async" onerror="this.remove()">
+        </div>
+        <div class="coach-body"><h3>임채민 관장</h3><p class="coach-role">대표 관장</p><p>JTBC 방송에 소개된 더챔프의 대표 관장입니다.</p></div>
       </article>
       <article class="coach-card">
         <div class="coach-photo"><div class="pfp-box" aria-hidden="true"><svg class="pfp" viewBox="0 0 100 100"><circle cx="50" cy="36" r="17" fill="currentColor"/><path d="M16 94c4-24 19-32 34-32s30 8 34 32z" fill="currentColor"/></svg></div></div>
@@ -752,6 +765,17 @@
       </article>
     </div>
     <p class="rail-hint" aria-hidden="true">← 옆으로 넘겨서 코치진 보기</p>
+
+    <!-- [수정] 영상 속 인사하시는 분이 어느 분인지 알려주시면 성함을 캡션에 넣겠습니다.
+         확인 전까지는 성함을 임의로 쓰지 않고 체육관 인사말로만 표기합니다. -->
+    <div class="snaps rv" aria-label="체육관 인사 영상">
+      <figure class="snap tall">
+        <video controls playsinline preload="metadata" poster="images/welcome-poster.jpg"
+               src="videos/welcome.mp4"
+               aria-label="체육관 데스크에서 인사하는 인사 영상 — &quot;안녕하세요 더챔프복싱입니다&quot;"></video>
+        <figcaption>"안녕하세요, 더챔프복싱입니다" 👋<br>문 열고 들어오시면 이렇게 맞아드려요</figcaption>
+      </figure>
+    </div>
 
     <div class="jtbc rv">
       <div class="jtbc-photo"><img src="images/card-jtbc.jpg" alt="전국최초 JTBC 출연 복싱체육관 소개 카드" loading="lazy" decoding="async" onerror="this.remove()"></div>
