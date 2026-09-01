@@ -276,6 +276,40 @@
     .jtbc-photo{ min-height:230px; }
   }
 
+  /* ---------- 누구나 하는 운동 (수업 하이라이트) ---------- */
+  .spot{
+    display:grid; grid-template-columns:minmax(0,320px) minmax(0,1fr);
+    gap:44px; align-items:center; margin-top:44px;
+  }
+  .spot-media{
+    position:relative; aspect-ratio:9/16; overflow:hidden; background:#000;
+    border-radius:18px; border:1px solid var(--line);
+    box-shadow:0 18px 44px rgba(18,71,184,.20);
+  }
+  .spot-media img, .spot-media video{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; display:block;
+  }
+  .spot-cap{
+    font-family:var(--hand); font-size:20px; line-height:1.35;
+    color:#3d4a5c; text-align:center; padding-top:10px;
+  }
+  .spot h3{ font-size:clamp(21px,3.4vw,28px); line-height:1.35; }
+  .spot-lead{ color:var(--dim); margin-top:12px; max-width:32em; }
+  .chips{ display:flex; flex-direction:column; gap:10px; margin-top:24px; }
+  .chip{
+    display:flex; gap:12px; align-items:flex-start;
+    background:var(--blue-soft); border:1px solid #d7e4fb;
+    border-radius:14px; padding:13px 16px;
+  }
+  .chip svg{ width:20px; height:20px; color:var(--blue); flex-shrink:0; margin-top:1px; }
+  .chip b{ display:block; font-size:15px; }
+  .chip span{ font-size:13.5px; color:var(--dim); }
+  @media (max-width:820px){
+    .spot{ grid-template-columns:1fr; gap:26px; }
+    .spot-figure{ max-width:340px; margin:0 auto; width:100%; }
+  }
+
   /* 후기 자리 */
   .review-note{
     margin:36px auto 0; max-width:560px; text-align:center;
@@ -465,6 +499,7 @@
   @supports not (aspect-ratio: 1 / 1){
     .coach-photo{ height:220px; }
     .video-main{ height:250px; }
+    .spot-media{ height:520px; }
   }
 </style>
 </head>
@@ -599,6 +634,49 @@
     <p class="eyebrow rv">Members</p>
     <h2 class="sec-title rv">분위기가 운동을 만듭니다</h2>
     <p class="sec-lead rv">더챔프가 파는 건 샌드백이 아니라, "여기 가면 나도 즐겁게 운동할 수 있겠다"는 경험입니다.</p>
+
+    <!-- 실제 수업 하이라이트: 처음 배우는 회원도 바로 섞여서 운동합니다 -->
+    <div class="spot rv">
+      <figure class="spot-figure">
+        <div class="spot-media">
+          <!-- 영상이 재생되지 않는 브라우저에서는 아래 사진이 그대로 보입니다 -->
+          <img src="images/women-poster.jpg" alt="회원이 헤비백에 펀치를 연습하는 수업 모습" loading="lazy" decoding="async" onerror="this.remove()">
+          <video autoplay muted loop playsinline preload="metadata"
+                 poster="images/women-poster.jpg"
+                 aria-label="회원이 헤비백에 펀치를 연습하고, 케틀벨 운동과 수업 마무리 구호를 다 같이 하는 실제 수업 영상">
+            <source src="videos/women-highlight.mp4" type="video/mp4" onerror="this.parentElement.remove()">
+          </video>
+        </div>
+        <figcaption class="spot-cap">재밌게, 그리고 제대로 — 오늘도 한 라운드 🥊</figcaption>
+      </figure>
+
+      <div>
+        <h3>복싱은 원래, 누구나 하는 운동입니다</h3>
+        <p class="spot-lead">
+          더챔프는 남녀 구분 없이 <b>같은 수업을 듣고 같은 코치에게 배웁니다.</b>
+          글러브를 처음 껴본 분도 자세부터 코치가 잡아드리기 때문에,
+          구석에서 혼자 눈치 볼 일이 없습니다.
+        </p>
+        <div class="chips">
+          <div class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div><b>스파링은 강요하지 않습니다</b><span>안전하고 재밌는 복싱이 원칙 — 원하는 분만 하시면 됩니다.</span></div>
+          </div>
+          <div class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <div><b>코치 4명이 60분 내내 함께</b><span>혼자 운동하다 끝나는 복싱장이 아닙니다.</span></div>
+          </div>
+          <div class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v6a8 8 0 0 0 16 0V4"/><path d="M12 18v3"/><path d="M8 21h8"/></svg>
+            <div><b>운동복 · 수건 · 샤워실 제공</b><span>퇴근길에 몸만 오셔도 바로 운동하실 수 있습니다.</span></div>
+          </div>
+          <div class="chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+            <div><b>매일 다른 100가지 이상 프로그램</b><span>지루할 틈 없이, 갈 때마다 새로운 수업입니다.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="snaps rv" aria-label="회원 사진">
       <figure class="snap card"><img src="images/m-evening.jpg" alt="사람이 가득한 저녁 수업 모습" loading="lazy" decoding="async" onerror="this.parentElement.remove()"><figcaption>저녁 수업, 이 분위기입니다</figcaption></figure>

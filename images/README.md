@@ -11,6 +11,7 @@
 | `favicon.png` | 브라우저 탭 아이콘 | 로고 기반 |
 | `hero-poster.jpg` | 첫 화면 배경(정지 이미지·영상 poster) | 체육관 실제 사진 |
 | `entrance-poster.jpg` | `#video` 섹션 입구 워크스루 영상 poster | 영상에서 추출한 정지 프레임 |
+| `women-poster.jpg` | `#members` 하이라이트 영상 poster·대체 이미지 | 하이라이트 영상에서 추출한 정지 프레임 (헤비백 훈련 장면) |
 | `gym-01.jpg` | `#members` 배경(흐림) + 단체 스냅 | 회원·코치진 단체 사진 |
 | `gym-04.jpg` | `#contact` 배경(흐림) | 체육관 사진 |
 | `gym-05.jpg` | `#community` 스냅 | 다이어트 콘테스트 |
@@ -45,6 +46,7 @@ EVOTO 워터마크가 있는 사진(코치 프로필, 무료/체험 홍보컷 �
 |---|---|---|
 | `class-reel.mp4` | 첫 화면 배경(자동재생, 무음, 반복) | 실제 수업 영상 |
 | `entrance-reel.mp4` | `#video` 섹션 스냅(클릭 재생) | 입구부터 한 바퀴 둘러보는 워크스루 영상 |
+| `women-highlight.mp4` | `#members` 상단 하이라이트 (자동재생·무음·반복) | 입구 영상에서 편집한 5초 하이라이트 — 헤비백 훈련 → 케틀벨 → 다 같이 "화이팅" |
 
 대기 중: **사람 많은 저녁 수업 영상** — `#video` 섹션 상단 큰 자리(`.video-main`)에
 들어갈 예정이며, 도착하면 위와 같은 방식으로 `videos/` 에 추가하고 `index.html` 의
