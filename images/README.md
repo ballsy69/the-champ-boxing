@@ -7,37 +7,31 @@
 
 | 파일명 | 어디에 나오나 | 현재 내용 |
 |---|---|---|
-| `logo.png` | 상단 로고 · 첫 화면 오버레이 | 소개 영상 엔딩 로고에서 추출한 THE CHAMP GYM 로고(투명 배경, v6 — 독수리 몸통까지 완전한 형태) |
+| `logo.png` | 상단 로고 · 첫 화면(데스크톱) | 소개 영상 엔딩 로고에서 추출한 THE CHAMP GYM 로고(투명 배경, v6) |
 | `favicon.png` | 브라우저 탭 아이콘 | 로고 기반 |
-| `women-poster.jpg` | **첫 화면** 영상 poster·대체 이미지 + 데스크톱 흐린 배경, `#members` 하이라이트 poster | 헤비백 훈련 장면 정지 프레임 |
-| `og-image.jpg` | 카카오톡·네이버 등 링크 공유 미리보기 (`og:image`, 1200×630) | 헤비백 훈련 장면 (가로 규격으로 재구성) |
-| `hero-poster.jpg` | `#video` 섹션 큰 영상(`class-reel.mp4`) poster | 코치 미트 훈련 장면 |
-| `entrance-poster.jpg` | `#video` 섹션 입구 워크스루 영상 poster | 영상에서 추출한 정지 프레임 |
-| `welcome-poster.jpg` | `#coaches` 인사 영상 poster | 인사 영상에서 추출한 정지 프레임 |
-| `coach-lim.jpg` | `#coaches` 임채민 관장 카드 | JTBC 소개 카드에서 잘라낸 관장님 사진 (방송 자막으로 본인 확인) |
-| `gym-01.jpg` | `#members` 배경(흐림) + 단체 스냅 | 회원·코치진 단체 사진 |
+| `women-poster.jpg` | **첫 화면** 영상 poster·대체 이미지, 데스크톱 흐린 배경 | 헤비백 훈련 장면 정지 프레임 |
+| `og-image.jpg` | 카카오톡·네이버 링크 공유 미리보기 (`og:image`, 1200×630) | 헤비백 훈련 장면 |
+| `class-60-poster.jpg` | `#sixty` 실제 60분 영상 poster | "20분 체력운동 + 30분 복싱수업" 장면 |
+| `m-evening.jpg` | `#members` 상단 사진 띠 | 사람 많은 저녁 수업 |
+| `m-action.jpg` | `#members` 2×2 그리드 | 코치가 미트 훈련 직접 지도 |
+| `m-smile.jpg` | `#members` 2×2 그리드 | 밝게 웃는 수업 단체 사진 |
+| `m-class-group.jpg` | `#members` 2×2 그리드 | 글러브 든 수업 단체 사진 |
+| `gym-01.jpg` | `#members` 2×2 그리드 | 회원·코치진 단체 사진 |
+| `coach-lim.jpg` | `#coaches` 임채민 관장 | JTBC 소개 카드에서 잘라낸 관장님 사진 (방송 자막으로 본인 확인) |
+| `welcome-poster.jpg` | `#coaches` 인사 영상 poster | 인사 영상 정지 프레임 |
+| `c-competition.jpg` | `#community` 2×2 그리드 | 용산구청장배 출전 |
+| `gym-05.jpg` | `#community` 2×2 그리드 | 다이어트 콘테스트 |
+| `c-hiking.jpg` | `#community` 2×2 그리드 | 청계산 등산 크루 |
+| `c-nightrun.jpg` | `#community` 2×2 그리드 | 나이트 러닝 크루 |
+| `entrance-poster.jpg` | `#schedule` 시설 줄 "체육관 둘러보기" 영상 poster | 입구 장면 |
+| `gym-06.jpg` | `#schedule` 시설 줄 | 운동복·수건 선반 |
+| `gym-07.jpg` | `#schedule` 시설 줄 | 탈의실·사물함 |
+| `gym-08.jpg` | `#schedule` 시설 줄 | 샤워실 |
 | `gym-04.jpg` | `#contact` 배경(흐림) | 체육관 사진 |
-| `gym-05.jpg` | `#community` 스냅 | 다이어트 콘테스트 |
-| `gym-06.jpg` | `#schedule` 시설 스냅 | 운동복·수건 선반 |
-| `gym-07.jpg` | `#schedule` 시설 스냅 | 탈의실·사물함 |
-| `gym-08.jpg` | `#schedule` 시설 스냅 | 샤워실 |
-| `m-evening.jpg` | `#members` 첫 카드 | 사람 많은 저녁 수업 |
-| `m-action.jpg` | `#members` 스냅 | 코치가 미트 훈련 직접 지도 |
-| `m-class-group.jpg` | `#members` 스냅 | 글러브 든 수업 단체 사진 |
-| `m-smile.jpg` | `#members` 스냅 | 밝게 웃는 수업 단체 사진 |
-| `c-competition.jpg` | `#community` 스냅 | 용산구청장배 출전 |
-| `c-hiking.jpg` | `#community` 스냅 | 청계산 등산 크루 |
-| `c-nightrun.jpg` | `#community` 스냅 | 나이트 러닝 크루 |
-| `card-50min.jpg` | `#video` 스냅 | "50분 운동 700칼로리" 안내 카드 |
-| `card-poster01.jpg` | `#video` 스냅 | "오래 다니는 이유" 안내 카드 |
-| `card-grouppt.jpg` | `#video` 스냅 | "그룹 PT인데 개인 PT 같아요" 안내 카드 |
-| `card-poster03.jpg` | `#video` 스냅 | "코치 수가 다릅니다" 안내 카드 |
-| `card-review.jpg` | `#members` 스냅 | "재등록률이 말해줍니다" 안내 카드 |
-| `card-jtbc.jpg` | `#coaches` JTBC 소개 카드 | JTBC 출연 소개 카드 |
-| `card-trial.jpg` | `#community` 스냅 | 무료체험 안내 카드 |
 
-> `hero.jpg`, `gym-02.jpg`, `gym-03.jpg` 는 현재 `index.html` 어디에서도 쓰이지 않는
-> 미사용 파일입니다(과거 버전에서 남은 파일). 삭제해도 사이트에는 영향 없습니다.
+> 2026-09-02: 체육관 홍보 포스터 이미지(`card-*.jpg` 7장)는 모바일에서 글씨가 안 읽혀 사이트에서 제거했습니다.
+> 포스터의 핵심 숫자(20분 체력운동·30분 복싱수업·700kcal·JTBC 출연)는 큰 글자로 본문에 남겼습니다.
+> 원본 포스터는 사장님 휴대폰·전달 파일에 그대로 있습니다.
 
 권장: 한 장당 1MB 이하(JPG), 가로 1600px 정도면 충분합니다.
 EVOTO 워터마크가 있는 사진(코치 프로필, 무료/체험 홍보컷 등)은 절대 올리지 마세요 —
@@ -47,12 +41,10 @@ EVOTO 워터마크가 있는 사진(코치 프로필, 무료/체험 홍보컷 �
 
 | 파일명 | 어디에 나오나 | 현재 내용 |
 |---|---|---|
-| `hero-reel.mp4` | **첫 화면** (자동재생·무음·반복) | 회원 헤비백 훈련 → 수업 마지막 다 같이 "화이팅" (4초) |
-| `class-reel.mp4` | `#video` 섹션 큰 자리 (클릭 재생) | 코치와 미트 훈련하는 실제 수업 영상(HD) — 저녁 수업 영상 도착 시 교체 |
-| `entrance-reel.mp4` | `#video` 섹션 스냅(클릭 재생) | 입구부터 한 바퀴 둘러보는 워크스루 영상 |
-| `women-highlight.mp4` | `#members` 상단 하이라이트 (자동재생·무음·반복) | 입구 영상에서 편집한 5초 하이라이트 — 헤비백 훈련 → 케틀벨 → 다 같이 "화이팅" |
-| `welcome.mp4` | `#coaches` 인사 영상 (클릭 재생) | 입구 영상에서 편집한 3초 인사 — "안녕하세요 더챔프복싱입니다" |
+| `hero-reel.mp4` | **첫 화면** (자동재생·무음·반복, 4초) | 회원 헤비백 훈련 → 다 같이 "화이팅" |
+| `class-60.mp4` | `#sixty` 실제 60분 (자동재생·무음·반복, 20초) | 소개 영상을 수업 순서대로 편집: 20분 체력운동+30분 복싱수업 → 몸풀기 → 타바타·서킷 → 30분 복싱수업 → 헤비백 → 미트 트레이닝(HD) → 실력 UP → 화이팅 |
+| `welcome.mp4` | `#coaches` 인사 영상 (클릭 재생, 3초) | "안녕하세요 더챔프복싱입니다" |
+| `entrance-reel.mp4` | `#schedule` 시설 줄 (클릭 재생, 47초) | 입구부터 한 바퀴 둘러보는 워크스루 |
 
-대기 중: **사람 많은 저녁 수업 영상** — `#video` 섹션 상단 큰 자리(`.video-main`)에
-들어갈 예정이며, 도착하면 위와 같은 방식으로 `videos/` 에 추가하고 `index.html` 의
-`[수정]` 주석 자리에 연결하면 됩니다.
+대기 중: **사람 많은 저녁 수업 영상** — 도착하면 `class-60.mp4` 를 그 영상(또는 합본)으로 교체.
+사장님이 보내려던 영상 17개는 문자 전송 한도 때문에 썸네일만 도착했습니다 — 이메일(bjoowork@gmail.com) 또는 카카오톡으로 원본을 받아야 합니다.
