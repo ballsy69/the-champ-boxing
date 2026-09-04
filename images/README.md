@@ -28,6 +28,7 @@
 | `gym-07.jpg` | `#schedule` 시설 줄 | 탈의실·사물함 |
 | `gym-08.jpg` | `#schedule` 시설 줄 | 샤워실 |
 | `gym-04.jpg` | `#contact` 배경(흐림) | 체육관 사진 |
+| `gym-01.jpg` / `m-class-group.jpg` / `m-smile.jpg` / `c-competition.jpg` | `#why` / `#programs` / `#faq` / `#location` 배경(`.bgp`, 흑백·흐림·옅게) | 단체 사진 — 사장님 원칙 "단체 사진은 흐리게 배경으로" |
 
 > 2026-09-02: 체육관 홍보 포스터 이미지(`card-*.jpg` 7장)는 모바일에서 글씨가 안 읽혀 사이트에서 제거했습니다.
 > 포스터의 핵심 숫자(20분 체력운동·30분 복싱수업·700kcal·JTBC 출연)는 큰 글자로 본문에 남겼습니다.
