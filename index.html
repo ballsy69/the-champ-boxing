@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#ffffff">
 <script>(function(){var t;try{t=localStorage.getItem('champ-theme');}catch(e){}if(t!=='day'&&t!=='night'){var h=new Date().getHours();t=(h>=19||h<6)?'night':'day';}document.documentElement.setAttribute('data-theme',t);})();</script>
 <title>THE CHAMP BOXING GYM — 더챔프 복싱장 분당 서현</title>
-<meta name="description" content="복싱이 처음이어도 괜찮습니다. 60분 내내 코치 4명이 함께 도와드립니다. 분당 서현 더챔프 복싱장 — 매일 달라지는 100가지 이상의 복싱 × GX 프로그램, 무료체험은 네이버 예약 또는 전화 한 통으로.">
+<meta name="description" content="복싱이 처음이어도 괜찮습니다. 60분 내내 코치 4명이 함께 도와드립니다. 분당 서현 더챔프 복싱장 — 무료체험은 네이버 예약·전화로.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="THE CHAMP BOXING GYM — 더챔프 복싱장 분당 서현">
 <meta property="og:description" content="복싱이 처음이어도 괜찮습니다. 60분 내내 코치 4명이 함께 도와드립니다. 일단 무료로 한번 해보세요.">
@@ -95,7 +95,7 @@
   h2.t .blue{ color:var(--accent-text-lg); }
   .lead{ margin-top:12px; font-size:18px; color:var(--ink-2); max-width:36em; }
   .btn{
-    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    display:inline-flex; align-items:center; justify-content:center; gap:8px; text-align:center;
     text-decoration:none; font-weight:900; font-size:18px; letter-spacing:-.01em;
     min-height:58px; padding:0 26px; border-radius:8px; border:2px solid transparent;
   }
@@ -165,7 +165,7 @@
     .hero-bg{ display:none; }
     /* z-index:auto 필수: flex 아이템은 static 이어도 z-index 가 있으면 쌓임 맥락을 만들어 영상이 그라데이션 위로 올라옵니다 */
     .hero-in{ position:static; z-index:auto; flex:1; display:flex; flex-direction:column; justify-content:flex-end; padding:32px 20px calc(18px + 70px + env(safe-area-inset-bottom)); }
-    .hero-actions .btn-line{ display:none; }   /* 전화 버튼은 바로 아래 하단 고정 바에 항상 있음 */
+    .hero-actions .btn-line{ display:none; }   /* 첫 화면은 버튼 하나만 — 예약·전화는 아래 고정 바에 항상 있습니다 */
     .hero-reel{ position:absolute; inset:0; z-index:0; max-width:none; aspect-ratio:auto; border:0; box-shadow:none; justify-self:auto; }
     /* 세로 영상(9:16)은 폰 화면보다 가로가 넓어 꽉 채우면 영상 속 자막·인물이 잘립니다.
        → 가로를 화면에 맞추고(잘림 없음) 위쪽 천장만 살짝 잘라냅니다. 아래 남는 부분은 문구 그라데이션이 덮습니다. */
@@ -215,8 +215,8 @@
   .stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:3px solid var(--ink); }
   .stat{ padding:18px 14px; border-right:3px solid var(--ink); text-align:center; }
   .stat:last-child{ border-right:0; }
-  .stat .n{ font-family:var(--num); font-size:clamp(40px,9vw,64px); line-height:1; color:var(--accent-text-lg); }
-  .stat .n small{ font-size:.42em; margin-left:2px; }
+  .stat .n{ font-family:var(--num); font-size:clamp(34px,8vw,64px); line-height:1; color:var(--accent-text-lg); white-space:nowrap; }
+  .stat .n small{ font-size:.38em; margin-left:1px; white-space:nowrap; }
   .stat .l{ margin-top:6px; font-size:15px; font-weight:900; }
   .sixty-copy p{ margin-top:16px; font-size:17px; color:var(--ink-2); }
   .steps{ margin-top:18px; display:flex; flex-wrap:wrap; gap:8px; }
@@ -225,7 +225,7 @@
   @media (max-width:820px){
     .sixty{ grid-template-columns:1fr; gap:20px; }
     .sixty-video{ max-width:none; margin:0 -20px; border-left:0; border-right:0; box-shadow:none; }
-    .stat{ padding:14px 8px; }
+    .stat{ padding:14px 6px; }
   }
 
   /* ---------- 사진 띠 / 그리드 ---------- */
@@ -300,7 +300,9 @@
   .price p{ margin-top:12px; font-size:18px; color:var(--ink-2); max-width:34em; }
   .price p b{ color:var(--ink); }
   .price .btn{ margin-top:18px; }
-  @media (max-width:820px){ .price{ box-shadow:8px 8px 0 var(--accent); margin-right:8px; } .price .btn{ width:100%; } }
+  .price .phint{ margin-top:10px; font-size:15px; font-weight:700; color:var(--dim); }
+  .price .phint a{ color:var(--ink); white-space:nowrap; }
+  @media (max-width:820px){ .price{ box-shadow:8px 8px 0 var(--accent); margin-right:8px; } .price .btn{ width:100%; padding:0 12px; font-size:17px; } }
 
   /* ---------- 시간표 (사장님 브리프대로 화이트 기반 — 검정 띠 없음) ---------- */
   .tt{ width:100%; border-collapse:collapse; margin-top:22px; font-size:17px; border:3px solid var(--ink); background:var(--bg); }
@@ -355,7 +357,7 @@
   .contact p{ margin:14px auto 0; max-width:30em; font-size:17px; color:var(--ink-2); }
   .contact .btn{ font-size:19px; min-height:62px; }
   .contact-btns{ margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
-  .contact .hint{ margin-top:12px; font-size:15px; color:var(--dim); }
+  .contact .hint{ margin-top:12px; font-size:15px; color:var(--dim); max-width:40em; }
   footer{ background:var(--black); color:#9aa5b4; font-size:15px; border-top:3px solid var(--line); padding:26px 0 calc(26px + env(safe-area-inset-bottom)); }
   .foot-in{ max-width:var(--max); margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; gap:8px 24px; align-items:center; }
   .foot-in .fl{ font-family:var(--num); font-size:18px; letter-spacing:.06em; color:#fff; }
@@ -388,7 +390,9 @@
   /* ---------- 네이버 방문자 리뷰 요약 (숫자·문구는 네이버 플레이스 화면 그대로) ---------- */
   .nrev{ margin-top:22px; border:3px solid var(--ink); box-shadow:10px 10px 0 var(--accent); background:var(--bg); padding:20px 20px 16px;
     display:grid; grid-template-columns:auto minmax(0,1fr); gap:14px 28px; align-items:center; }
-  .nrev-score{ display:flex; align-items:center; gap:14px; }
+  .nrev-score{ display:flex; align-items:center; gap:14px; min-width:0; }
+  .nrev-score .n{ flex:none; white-space:nowrap; }
+  .nrev-score .l{ min-width:0; }
   .nrev-score .n{ font-family:var(--num); font-size:clamp(56px,13vw,76px); line-height:1; color:var(--accent-text-lg); }
   .nrev-score .l b{ display:block; font-size:18px; font-weight:900; }
   .nrev-score .l span{ font-size:15px; color:var(--dim); font-weight:700; }
@@ -396,7 +400,7 @@
   .nrev-tags li{ display:flex; align-items:baseline; gap:10px; font-size:16px; font-weight:700; padding:7px 0; border-bottom:1px solid var(--line); }
   .nrev-tags li b{ font-family:var(--num); font-size:20px; color:var(--accent-text); min-width:2.1em; }
   .nrev-foot{ grid-column:1 / -1; display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 14px; font-size:14px; color:var(--dim); border-top:2px solid var(--line); padding-top:10px; }
-  .nrev-foot a{ font-weight:900; color:var(--ink); }
+  .nrev-foot a{ font-weight:900; color:var(--ink); display:inline-block; padding:11px 0; margin:-8px 0; }
   @media (max-width:820px){
     .nrev{ grid-template-columns:1fr; box-shadow:6px 6px 0 var(--accent); margin-right:6px; padding:18px 16px 14px; gap:10px; }
     .nrev-tags{ grid-template-columns:1fr; }
@@ -533,7 +537,7 @@
     <div class="nrev rv" aria-label="네이버 방문자 리뷰 요약">
       <div class="nrev-score">
         <div class="n">4.98</div>
-        <div class="l"><b>네이버 방문자 평점</b><span>65명 평가 · 방문자 리뷰 218개</span></div>
+        <div class="l"><b>네이버 방문자 평점</b><span><span style="white-space:nowrap">65명 평가</span> · <span style="white-space:nowrap">방문자 리뷰 218개</span></span></div>
       </div>
       <ul class="nrev-tags">
         <li><b>203</b>선생님이 열정적이에요</li>
@@ -543,10 +547,11 @@
         <li><b>115</b>수업 시간이 다양해요</li>
         <li><b>98</b>선생님이 잘 가르쳐요</li>
         <li><b>68</b>가격이 합리적이에요</li>
+        <li><b>53</b>소통이 잘 돼요</li>
         <li><b>42</b>샤워실이 잘 되어 있어요</li>
       </ul>
       <div class="nrev-foot">
-        <span>출처: 네이버 플레이스 방문자 리뷰 키워드 · 2026년 9월 기준</span>
+        <span>출처: 네이버 플레이스 방문자 리뷰 <span style="white-space:nowrap">(2026.09 기준)</span></span>
         <a href="https://naver.me/GuCgOuPx" target="_blank" rel="noopener">네이버에서 리뷰 전체 보기 →</a>
       </div>
     </div>
@@ -587,7 +592,8 @@
     <div class="price rv">
       <h3>가격만 궁금해도 괜찮습니다 😊</h3>
       <p><b>주 3회부터 자유롭게</b> 이용할 수 있고, 기간과 운동 목적에 따라 <b>가장 합리적인 회원권</b>을 안내해드립니다.</p>
-      <a class="btn btn-blue" href="sms:010-7397-2169">문자로 10초 만에 가격 문의하기</a>
+      <a class="btn btn-blue" href="sms:010-7397-2169">10초 만에 가격 문의하기</a>
+      <p class="phint">문자 · 전화 <a href="tel:010-7397-2169">010-7397-2169</a></p>
     </div>
   </div>
 </section>
@@ -638,7 +644,7 @@
   <div class="wrap">
     <p class="label rv">08 — Timetable</p>
     <h2 class="t rv">수업 시간표</h2>
-    <p class="lead rv">그룹 수업은 아래 시간표대로. 그 외 시간에도 언제 오시든 1:1 지도와 자율운동이 가능합니다.</p>
+    <p class="lead rv">그룹 수업은 아래 시간표대로. 그 외 시간에도 운영시간 내 언제 오시든 1:1 지도와 자율운동이 가능합니다.</p>
     <!-- 시간표는 체육관 시간표 포스터, 운영시간은 네이버 플레이스 등록 정보(2026-09 기준: 평일 10:00–22:30 · 토 11:00–13:00 · 일요일 휴무) 기준 -->
     <div class="hours rv" aria-label="운영시간"><span class="k">Open</span><b>평일 10:00 – 22:30</b><span>토요일 11:00 – 13:00</span><span>일요일 휴무</span></div>
     <table class="tt rv">
@@ -654,7 +660,7 @@
       </tbody>
     </table>
     <div class="ttnote rv">
-      <div><span><b>13:00–17:00</b> 매일 1대1 개인지도 · 자율운동 — 시간대 상관없이 언제 오셔도 수업 가능</span></div>
+      <div><span><b>평일 13:00–17:00</b> 1대1 개인지도 · 자율운동 — 운영시간 내 언제 오셔도 수업 가능</span></div>
       <div><span><b>주 3회권 회원도</b> 요일 지정 없이 원하는 날 오시면 됩니다</span></div>
       <div><span><b>1:1 퍼스널 레슨</b>은 예약제 (시간 협의)</span></div>
       <div><span><b>샤워실 · 운동복 · 수건</b> 제공 — 몸만 오세요</span></div>
@@ -677,7 +683,7 @@
     <p class="lead rv">실제로 가장 많이 받는 질문들입니다. 여기에 없는 내용은 전화나 문자로 편하게 물어보세요.</p>
     <div class="faq rv">
       <details><summary><span class="q">Q1</span>이용 가격이 어떻게 되나요?</summary><p class="a">기간과 운동 목적에 따라 <b>가장 합리적인 회원권을 1:1로 안내</b>드립니다. 문자로 "가격 문의"라고만 보내주셔도 10초면 충분해요. 상담 후 등록 여부는 천천히 정하셔도 괜찮습니다.</p></details>
-      <details><summary><span class="q">Q2</span>수업은 몇 시에 있나요?</summary><p class="a">위 <b>수업 시간표</b>를 참고해 원하시는 시간에 방문하시면 됩니다. 수업 시간이 아니어도 <b>언제 오시든 1:1 지도와 자율운동</b>이 가능합니다.</p></details>
+      <details><summary><span class="q">Q2</span>수업은 몇 시에 있나요?</summary><p class="a">위 <b>수업 시간표</b>를 참고해 원하시는 시간에 방문하시면 됩니다. 수업 시간이 아니어도 <b>운영시간 내 언제든 1:1 지도와 자율운동</b>이 가능합니다.</p></details>
       <details><summary><span class="q">Q3</span>주 3회 회원은 정해진 요일과 시간에 와야 하나요?</summary><p class="a">아닙니다. 정해진 요일이나 고정된 수업 시간이 있는 방식이 아니라, 운영시간 내 <b>본인이 원하는 요일과 시간에 자유롭게</b> 이용하실 수 있습니다.</p></details>
       <details><summary><span class="q">Q4</span>복싱을 처음 해보는데 괜찮나요?</summary><p class="a">네. 처음 오시는 분들도 코치가 <b>1대1로 기초부터 별도로 안내</b>하고 있어, 복싱 경험이 없어도 바로 시작하실 수 있습니다.</p></details>
       <details><summary><span class="q">Q5</span>무료체험은 어떻게 신청하나요?</summary><p class="a"><b>네이버 예약</b>에서 날짜와 시간을 고르시거나, <b>전화·문자로 원하는 날짜와 시간</b>만 보내주시면 예약이 확정됩니다. 별도 준비물 없이 편한 운동복으로 오시면 됩니다.</p></details>
@@ -698,18 +704,18 @@
       <div class="loc-card rv">
         <h3>Address</h3>
         <p class="loc-addr">경기 성남시 분당구<br>서현동 254-5, 2층</p>
-        <p><b>서현프라자 2층</b> — 서현역 CGV 옆 건물입니다.</p>
+        <p><b>서현프라자 2층</b> · 서현역 CGV 옆</p>
         <div class="map-btns">
           <a href="https://naver.me/GuCgOuPx" target="_blank" rel="noopener">네이버 지도</a>
-          <a href="https://map.kakao.com/link/search/더챔프복싱장 분당" target="_blank" rel="noopener">카카오맵</a>
+          <a href="https://map.kakao.com/link/search/더챔프복싱%20분당서현점" target="_blank" rel="noopener">카카오맵</a>
         </div>
       </div>
       <div class="loc-card rv">
         <h3>How to get here</h3>
-        <!-- 도보 시간·거리: 체육관 릴스 엔딩 카드("서현역 5번 출구 도보 4분") + 네이버 플레이스("서현역 5번 출구에서 384m"). 주차: 네이버 플레이스 등록 안내(지하주차장) 기준. -->
+        <!-- 도보 시간·거리: 체육관 릴스 엔딩 카드("서현역 5번 출구 도보 4분") + 네이버 플레이스(영문 화면 "384m from Seohyeon Station Exit 5"). 주차: 네이버 플레이스 등록 안내(지하주차장) 기준. -->
         <p><b>지하철</b> — 수인분당선 서현역 <b>5번 출구</b>에서 도보 4분 (약 380m)</p>
         <p><b>버스</b> — 서현역·서현동 정류장 하차 후 도보</p>
-        <p><b>주차</b> — 건물 <b>지하주차장</b>을 이용하실 수 있습니다.</p>
+        <p><b>주차</b> — 건물 <b>지하주차장</b> 이용 가능</p>
       </div>
     </div>
   </div>
@@ -735,13 +741,13 @@
 <footer>
   <div class="foot-in">
     <span class="fl">THE <b>CHAMP</b> BOXING GYM</span>
-    <span>경기 성남시 분당구 서현동 254-5 서현프라자 2층 · 문의 010-7397-2169</span>
+    <span>경기 성남시 분당구 서현동 254-5 서현프라자 2층 · <a href="tel:010-7397-2169" style="white-space:nowrap;color:#fff">문의 010-7397-2169</a></span>
   </div>
 </footer>
 
 <!-- 모바일 하단 고정 CTA -->
 <div class="ctabar" aria-label="빠른 문의">
-  <a class="btn btn-blue" href="#contact">무료체험 신청</a>
+  <a class="btn btn-naver" href="https://naver.me/GuCgOuPx" target="_blank" rel="noopener">네이버 예약</a>
   <a class="btn btn-line" href="tel:010-7397-2169">전화 문의</a>
 </div>
 
@@ -785,7 +791,7 @@
   /* 하단 고정 바: 첫 화면 버튼·마지막 문의 버튼이 보일 때는 숨김 (같은 버튼 중복 방지) */
   (function(){
     if(!('IntersectionObserver' in window)) return;
-    var targets=[document.querySelector('.hero-actions'), document.querySelector('.contact .btn')].filter(Boolean);
+    var targets=[document.querySelector('.contact-btns')].filter(Boolean);
     var seen=new Set();
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if(en.isIntersecting) seen.add(en.target); else seen.delete(en.target); });
